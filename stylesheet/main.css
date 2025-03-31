@@ -1,5 +1,32 @@
+:root {
+	--spacing: 1em;
+}
+
 .happy-filter{
     display: block;
+    width:3rem;
+    height:3rem;
+}
+
+.search-icon{
+    display:block;
     width:20px;
     height:20px;
+}
+
+ul {
+	display:flex;
+    background-color:grey;
+}
+
+li {
+	display: flex;
+}
+
+#mySearch{
+    background-color:grey;
+}
+
+.search-button{
+    background-color:grey;
 }

@@ -24,7 +24,7 @@ const renderItems = (data) => {
 					<p>Released in <time>${item.Year}</time></p>
 					<p><em>${item.Vees-rating}</em></p>
                     <p><em>${item.Vibes}</em></p>
-					<p>${item.Overall-rating} / 5 </p>
+					<p>${item.Overall-rating} / 5</p>
 				</li>
 			`
 
@@ -33,8 +33,6 @@ const renderItems = (data) => {
 		// Don’t feel limited to `ul > li` for these—you can insert any DOM, anywhere!
 	})
 }
-
-
 
 // Fetch gets your (local) JSON file…
 // https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch

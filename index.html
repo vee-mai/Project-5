@@ -11,19 +11,26 @@
 	<body>
         <aside class="header">
             <p class="welcome-text">Hi there,</p>
-            <h1 class="title">≤K-dramas based on vibes</h1>
+            <h1 class="title">K-dramas based on vibes</h1>
         </aside>
 
-        <div class="search-container">
-            <img src="Search.png" alt="Search" width="20" height="20">
-            <input type="text" placeholder="Search" class="search-input">
-        </div>
+        <!-- <div class="search-container">
+            <img class="search-icon" src="assets/Search.png"></img>
+        </div> -->
+
+        <form>
+            <div>
+              <input type="search" id="mySearch" name="q" />
+              <button class="search-button">Search</button>
+            </div>
+          </form>
+        
 
         <button class="filter-button">
-            <imag class="happy-filter" src="assets/Smiley.png"></imag>
+            <img class="happy-filter" src="assets/Smiley.png"></img>
         </button>
 
-        <ul id="data-list"></ul>
-
+        <ul id="data-list" class="hide-director"></ul>
     </body>
+</html>
      
