@@ -22,9 +22,9 @@ const renderItems = (data) => {
 					<h2>${item.Title}</h2>
 					<img src="${item.Poster}">
 					<p>Released in <time>${item.Year}</time></p>
-					<p><em>${item.Vees-rating}</em></p>
+					<p><em>${item.VeesRating}</em></p>
                     <p><em>${item.Vibes}</em></p>
-					<p>${item.Overall-rating} / 5</p>
+					<p>${item.OverallRating} / 5</p>
 				</li>
 			`
 

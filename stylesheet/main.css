@@ -30,3 +30,15 @@ li {
 .search-button{
     background-color:grey;
 }
+
+input:invalid ~ span::after {
+    content: "✖";
+    padding-left:1rem;
+    position: absolute;
+  }
+  
+  input:valid ~ span::after {
+    content: "✓";
+    padding-left:1rem;
+    position: absolute;
+  }
