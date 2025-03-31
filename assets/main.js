@@ -6,21 +6,21 @@ const renderItems = (data) => {
 	// Loop through each item in the data array
 	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 	data.forEach((item) => {
-		let conditionalClass = '' // Set an empty class variable
+		let KdramaCard = '' // Set an empty class variable
 
 		// Conditional if this is `false` (“not true”)
 		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
 		if (!item.alsoWasWriter) {
-			conditionalClass = 'faded' // Update the variable
+			KdramaCard = 'faded' // Update the variable
 		}
 
 		// Make a “template literal” as we have before, inserting your data (and maybe the class)
 		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 		let listItem =
 			`
-				<li class="${conditionalClass}">
+				<li id="${KdramaCard}">
 					<h2>${item.Title}</h2>
-					<img src="${item.Poster}">
+					<img class="poster" src="${item.Poster}">
 					<p>Released in <time>${item.Year}</time></p>
 					<p><em>${item.VeesRating}</em></p>
                     <p><em>${item.Vibes}</em></p>

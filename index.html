@@ -10,7 +10,7 @@
 	</head>
 	<body>
         <aside class="header">
-            <p class="welcome-text">Hi there,</p>
+            <h2 class="welcome-text">Find</h2>
             <h1 class="title">K-dramas based on vibes</h1>
         </aside>
 
@@ -18,9 +18,9 @@
             <img class="search-icon" src="assets/Search.png"></img>
         </div> -->
 
-        <form>
+        <form role="search">
             <div>
-              <input type="search" id="mySearch" name="q" />
+              <input type="search" id="mySearch" placeholder="search k-dramas" />
               <button class="search-button">Search</button>
             </div>
           </form>
@@ -30,7 +30,9 @@
             <img class="happy-filter" src="assets/Smiley.png"></img>
         </button>
 
-        <ul id="data-list" class="hide-director"></ul>
+        <section>
+            <ul id="data-list" class="hide-director"></ul>
+        </section>
     </body>
 </html>
      
