@@ -3,117 +3,207 @@
       "Title": "Business Proposal",
       "Year": 2022,
       "Poster": "https://upload.wikimedia.org/wikipedia/en/1/19/A_Business_Proposal.jpg",
-      "number-of-episode": 12,
-      "VeesRating": "love it",
-      "Vibes": "Feel-Good",
-      "OverallRating": 4
+      "Episode": 12,
+      "VeesRating": "feel good",
+      "tags": {
+        "Must-watch": "false",
+        "Rom-com": "true",
+        "Supernatural": "false",
+        "Heartfelt":"true",
+        "Historical":"false",
+        "Emotional":"false",
+        "light":"true"
+    }
     },
     {
       "Title": "Twinkling Watermelon",
       "Year": 2023,
-      "Poster": "https://www.imdb.com/title/tt27446493/mediaviewer/rm3533132289/?ref_=tt_ov_i",
-      "number-of-episode": 16,
+      "Poster": "https://upload.wikimedia.org/wikipedia/en/5/52/Twinkling_Watermelon.jpg",
+      "Episode": 16,
       "VeesRating": "love it",
-      "Vibes": "Feel-Good",
-      "OverallRating": 4.5
+      "tags": {
+        "Must-watch": "false",
+        "Rom-com": "true",
+        "Supernatural": "false",
+        "Heartfelt":"true",
+        "Historical":"false",
+        "Emotional":"false",
+        "light":"true"
+    }
     },
     {
       "Title": "King the Land",
       "Year": 2023,
-      "Poster": "https://www.imdb.com/title/tt26693803/mediaviewer/rm969025025/?ref_=tt_ov_i",
-      "number-of-episode": 16,
+      "Poster": "https://upload.wikimedia.org/wikipedia/en/d/da/King_the_Land.png",
+      "Episode": 16,
       "VeesRating": "love it",
-      "Vibes": "Feel-Good",
-      "OverallRating": 4.8
+      "tags": {
+        "Must-watch": "true",
+        "Rom-com": "true",
+        "Supernatural": "false",
+        "Heartfelt":"true",
+        "Historical":"false",
+        "Emotional":"false",
+        "light":"true"
+    }
     },
     {
       "Title": "Mr. Queen",
       "Year": 2021,
-      "Poster": "https://www.imdb.com/title/tt13400006/mediaviewer/rm3337411585/?ref_=tt_ov_i",
-      "number-of-episode": 20,
+      "Poster": "https://upload.wikimedia.org/wikipedia/en/e/e7/Mr._Queen_poster.jpg",
+      "Episode": 20,
       "VeesRating": "love it",
-      "Vibes": "Feel-Good",
-      "OverallRating": 5
+      "tags": {
+        "Must-watch": "false",
+        "Rom-com": "true",
+        "Supernatural": "false",
+        "Heartfelt":"true",
+        "Historical":"true",
+        "Emotional":"true",
+        "light":"true"
+    }
     },
     {
       "Title": "Extraordinary Attorney Woo",
       "Year": 2022,
-      "Poster": "https://www.imdb.com/title/tt20869502/mediaviewer/rm3484751361/?ref_=tt_ov_i",
-      "number-of-episode": 16,
+      "Poster": "https://upload.wikimedia.org/wikipedia/en/9/9d/Strange_Lawyer_Woo_Young-woo.png",
+      "Episode": 16,
       "VeesRating": "love it",
-      "Vibes": "Feel-Good",
-      "OverallRating": 4
+      "tags": {
+        "Must-watch": "false",
+        "Rom-com": "false",
+        "Supernatural": "false",
+        "Heartfelt":"true",
+        "Historical":"false",
+        "Emotional":"false",
+        "light":"true"
+    }
     },
     {
       "Title": "Strong Girl Nam-Soon",
       "Year": 2023,
-      "Poster": "https://www.imdb.com/title/tt29225198/mediaviewer/rm2080988417/?ref_=tt_ov_i",
-      "number-of-episode": 16,
+      "Poster": "https://upload.wikimedia.org/wikipedia/en/9/9f/Strong_Woman_Gang_Nam-soon.jpg",
+      "Episode": 16,
       "VeesRating": "neutral",
-      "Vibes": "Feel-Good",
-      "OverallRating": 3
+      "tags": {
+        "Must-watch": "false",
+        "Rom-com": "false",
+        "Supernatural": "false",
+        "Heartfelt":"true",
+        "Historical":"false",
+        "Emotional":"false",
+        "light":"true"
+    }
     },
     {
       "Title": "Welcome To Samdal-ri",
       "Year": 2023,
-      "Poster": "https://www.imdb.com/title/tt26653824/mediaviewer/rm2234864897/?ref_=tt_ov_i",
-      "number-of-episode": 16,
+      "Poster": "https://upload.wikimedia.org/wikipedia/en/5/54/Welcome_to_Samdal-ri.jpg",
+      "Episode": 16,
       "VeesRating": "yes but",
-      "Vibes": "Feel-Good",
-      "OverallRating": 4
+      "tags": {
+        "Must-watch": "false",
+        "Rom-com": "false",
+        "Supernatural": "false",
+        "Heartfelt":"true",
+        "Historical":"false",
+        "Emotional":"false",
+        "light":"true"
+    }
     },
     {
       "Title": "Moon Embracing The Sun",
       "Year": 2012,
-      "Poster": "https://www.imdb.com/title/tt3143378/mediaviewer/rm1340466176/?ref_=tt_ov_i",
-      "number-of-episode": 20,
+      "Poster": "https://upload.wikimedia.org/wikipedia/en/3/3f/The_Moon_Embracing_the_Sun_poster.jpg",
+      "Episode": 20,
       "VeesRating": "yes but",
-      "Vibes": "Emotional",
-      "OverallRating": 5
+      "tags": {
+        "Must-watch": "false",
+        "Rom-com": "false",
+        "Supernatural": "false",
+        "Heartfelt":"true",
+        "Historical":"false",
+        "Emotional":"false",
+        "light":"true"
+    }
     },
     {
       "Title": "Buried Heart",
       "Year": 2025,
-      "Poster": "https://www.imdb.com/title/tt33398245/mediaviewer/rm590252546/?ref_=tt_ov_i",
-      "number-of-episode": 16,
-      "VeesRating": "love it",
-      "Vibes": "Emotional",
-      "OverallRating": 5
+      "Poster": "https://upload.wikimedia.org/wikipedia/en/9/92/Buried_Hearts_poster.png",
+      "Episode": 16,
+      "tags": {
+        "Must-watch": "false",
+        "Rom-com": "false",
+        "Supernatural": "false",
+        "Heartfelt":"true",
+        "Historical":"false",
+        "Emotional":"false",
+        "light":"true"
+    }
     },
     {
       "Title": "Under The Queen’s Umbrella",
       "Year": 2022,
-      "Poster": "https://www.imdb.com/title/tt22265394/mediaviewer/rm1798308609/?ref_=tt_ov_i",
-      "number-of-episode": 16,
+      "Poster": "https://upload.wikimedia.org/wikipedia/en/6/60/The_Queen%27s_Umbrella.jpg",
+      "Episode": 16,
       "VeesRating": "yes but",
-      "Vibes": "Emotional",
-      "OverallRating": 5
+      "tags": {
+        "Must-watch": "false",
+        "Rom-com": "false",
+        "Supernatural": "true",
+        "Heartfelt":"false",
+        "Historical":"false",
+        "Emotional":"false",
+        "light":"false"
+    }
     },
     {
       "Title": "My Demon",
       "Year": 2023,
-      "Poster": "https://www.imdb.com/title/tt29569035/mediaviewer/rm2857390337/?ref_=tt_ov_i",
-      "number-of-episode": 16,
+      "Poster": "https://upload.wikimedia.org/wikipedia/en/0/05/My_Demon.jpg",
+      "Episode": 16,
       "VeesRating": "alright",
-      "Vibes": "Action-Packed",
-      "OverallRating": 5
+      "tags": {
+        "Must-watch": "false",
+        "Rom-com": "false",
+        "Supernatural": "true",
+        "Heartfelt":"false",
+        "Historical":"false",
+        "Emotional":"false",
+        "light":"false"
+    }
     },
     {
       "Title": "Gyeongsong Creature",
       "Year": 2023,
-      "Poster": "https://www.imdb.com/title/tt22352854/mediaviewer/rm545868545/?ref_=tt_ov_i",
-      "number-of-episode": 10,
+      "Poster": "https://images.ctfassets.net/4cd45et68cgf/68U6dSWP5x7rqVVdLYGvO4/a8b289230f638addd5676e7dccc7137c/Gyeongseong_Creature_S2_Main_KA.jpg?w=1200",
+      "Episode": 10,
       "VeesRating": "binge worthy",
-      "Vibes": "Action-Packed",
-      "OverallRating": 5
+      "tags": {
+        "Must-watch": "false",
+        "Rom-com": "false",
+        "Supernatural": "true",
+        "Heartfelt":"false",
+        "Historical":"true",
+        "Emotional":"false",
+        "light":"false"
+    }
     },
     {
       "Title": "Sweet Home",
       "Year": 2020,
-      "Poster": "https://www.imdb.com/title/tt11612120/mediaviewer/rm1334268929/?ref_=tt_ov_i",
-      "number-of-episode": 10,
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNzVlZTU4ZDgtYWU5Ny00NWQzLWIyOWYtNDk5YWM5OGM0ZjRkXkEyXkFqcGc@._V1_.jpg",
+      "Episode": 10,
       "VeesRating": "yes but",
-      "Vibes": "Intense",
-      "OverallRatingg": 5
+      "tags": {
+        "Must-watch": "false",
+        "Rom-com": "false",
+        "Supernatural": "true",
+        "Heartfelt":"false",
+        "Historical":"false",
+        "Emotional":"false",
+        "light":"false"
+    }
     }
   ]

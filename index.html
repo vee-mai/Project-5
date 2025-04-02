@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Project 5:Vee's </title>
+        <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="stylesheet/reset.css" rel="stylesheet">
 		<link href="stylesheet/main.css" rel="stylesheet">
@@ -14,25 +15,33 @@
             <h1 class="title">K-dramas based on vibes</h1>
         </aside>
 
-        <!-- <div class="search-container">
-            <img class="search-icon" src="assets/Search.png"></img>
-        </div> -->
+        <div class="search-container">
+            <form role="search">
+                <input type="search" id="mySearch" placeholder="search k-dramas" oninput="filterByName(event)"/>
+                <button id="search-button"  onclick="search()">Search</button>
+            </form>    
+        </div>
 
-        <form role="search">
-            <div>
-              <input type="search" id="mySearch" placeholder="search k-dramas" />
-              <button class="search-button">Search</button>
-            </div>
-          </form>
         
-
-        <button class="filter-button">
-            <img class="happy-filter" src="assets/Smiley.png"></img>
-        </button>
+        <section class="filter">
+            <h3>
+                What vibes are you looking for?
+            </h3>
+            <button class="filter-button" id="happy-filter">
+                <img class="happy-filter" src="assets/Smiley.png"></img>
+            </button>
+            <button class="filter-button" id="sad-filter">
+                <img class="sad-filter" src="assets/SmileySad.png"></img>
+            </button> 
+            <button class="filter-button" id="spontaneous-filter">
+                <img class="spontaneous-filter" src="assets/Baby.png"></img>
+            </button> 
+        </section>
 
         <section>
             <ul id="data-list" class="hide-director"></ul>
         </section>
+        
     </body>
 </html>
      

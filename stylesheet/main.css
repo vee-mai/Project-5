@@ -19,13 +19,28 @@ h2{
     font-size:24px;
 }
 
-.header{
-    padding-top:5rem;
+h3{
+    font-family: "Fredoka", sans-serif;
+    font-size:18px;
     padding-left:1.5rem;
+    padding-top:2rem;
+}
+
+body{
+    font-family: "Fredoka", sans-serif;
+    font-size:16px;
+}
+
+aside{
+    padding:1.5rem;
 }
 
 form{
-    padding-top:1rem;
+    padding:1.5rem;
+}
+
+.header{
+    padding-top:5rem;
     padding-left:1.5rem;
 }
 
@@ -34,15 +49,19 @@ form{
     background-color:#d7d7d7;
     font-family: "Fredoka", sans-serif;
     font-size:14px;
-    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem;
     border-radius:0.4rem;
+    align-content: end;
 }
 
+/* search bar */
 #mySearch{
-    background-color:#d7d7d7;
+    background-color:#f1f1f1;
     font-family: "Fredoka", sans-serif;
-    color:grey;
-    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    font-size:14px;
+    color:rgb(180, 180, 180);
+    width:18.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.8rem;
     border-radius:0.4rem;
 }
 
@@ -65,7 +84,6 @@ form{
 ul {
 	display:flex;
     flex-direction:column;
-    gap:20rem;
 }
 
 li {
@@ -103,3 +121,86 @@ img{
     margin:1.5rem;
     border-radius:1rem;
 }
+
+.show-mustWatch{
+    li{
+		display:none;
+	}
+
+	li.image-block, .link-block{
+		display:block;
+	}
+}
+
+.show-romCom{
+    li{
+		display:none;
+	}
+
+	li.image-block, .link-block{
+		display:block;
+	}
+}
+
+.show-heartFelt{
+    li{
+		display:none;
+	}
+
+	li.image-block, .link-block{
+		display:block;
+	}
+}
+
+.show-light{
+    li{
+		display:none;
+	}
+
+	li.image-block, .link-block{
+		display:block;
+	}
+}
+
+.show-supernatural{
+    li{
+		display:none;
+	}
+
+	li.image-block, .link-block{
+		display:block;
+	}
+}
+
+.show-emotional{
+    li{
+		display:none;
+	}
+
+	li.image-block, .link-block{
+		display:block;
+	}
+}
+
+.show-historical{
+    li{
+		display:none;
+	}
+
+	li.image-block, .link-block{
+		display:block;
+	}
+}
+
+.show-all{
+    li{
+		display:none;
+	}
+
+	li.image-block, .link-block{
+		display:block;
+	}
+}
+
+
+
