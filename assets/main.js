@@ -18,7 +18,7 @@ const renderItems = (data) => {
 		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 		let listItem =
 			`
-			<li class="kdrama-card" id="${KdramaCard}">
+			<li class="kdrama-card vibes-${item.Vibes} tags-must-watch-${item.tags['Must-watch']}" id="${KdramaCard}">
 					<h2>${item.Title}</h2>
 					<img class="poster" src="${item.Poster}">
 					<p>Released in <time>${item.Year}</time></p>
@@ -41,7 +41,7 @@ fetch('assets/data.json')
 		renderItems(data)
 	})
 
-// filtering option 01
+// // filtering 
 
 // Let Javascript know about my buttons and elements 
 let kdramalBlocks = document.querySelector('#data-list')
@@ -66,25 +66,7 @@ spontaneousFilter.onclick = () => {
 
 // search filter 
 // https://medium.com/@cgustin/tutorial-simple-search-filter-with-vanilla-javascript-fdd15b7640bf
-// https://medium.com/@AlexanderObregon/how-to-build-a-dynamic-search-feature-with-javascript-filters-464b97038be1
 
-// reference 01
-// document.getElementById('mySearch').addEventListener('input', function (event) {
-//     const searchTerm = event.target.value.toLowerCase();
-//     const listItems = document.querySelectorAll('data-list li');
-
-//     listItems.forEach(function (item) {
-//         const itemText = item.textContent.toLowerCase();
-
-//         if (itemText.includes(searchTerm)) {
-//             item.style.display = 'list-item';
-//         } else {
-//             item.style.display = 'none';
-//         }
-//     });
-// });
-
-// reference 02
 document.getElementById('mySearch').addEventListener('input', filterByName);
 
 function filterByName(event) {
@@ -99,3 +81,36 @@ function filterByName(event) {
       }
     })
 }
+
+// // filter by vibes
+// document.addEventListener("DOMContentLoaded", function () {
+//     if (typeof data === "undefined") {
+//         console.error("Data is not loaded. Check if data.js is properly linked.");
+//         return;
+//     }
+
+//     // connects data from data.json
+//     displayKdrama(data);
+
+//     // filter option by vibes. Show the vibes that was clicked.
+//     document.getElementById("happy-filter").addEventListener("click", function () {
+//         filterByVibes("happy");
+//     });
+
+//     document.getElementById("sad-filter").addEventListener("click", function () {
+//         filterByVibes("sad");
+//     });
+
+//     document.getElementById("spontaneous-filter").addEventListener("click", function () {
+//         filterByVibes("spontaneous");
+//     });
+// });
+
+// // SECTION: filter function by vibes
+// function filterByVibes(Vibes) {
+//     // Goes through each kdrama list checks if they match the vibes
+//     const filteredData = data.filter(person => person.Vibes === Vibes);
+
+//     // Will display the kdrama that is for certain vibes
+//     displayKdrama(filteredData);
+// }
