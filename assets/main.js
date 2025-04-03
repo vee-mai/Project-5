@@ -23,7 +23,7 @@ const renderItems = (data) => {
 			<li class="vibes${item.Vibes}" id="${KdramaCard}">
 					<h2>${item.Title}</h2>
 					<img class="poster" src="${item.Poster}">
-					<p>where to watch${item.Where}</p>
+					<p>watch on ${item.Where}</p>
 				</li>
 			`
 
