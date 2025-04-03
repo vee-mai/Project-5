@@ -5,6 +5,7 @@
       "Poster": "https://upload.wikimedia.org/wikipedia/en/1/19/A_Business_Proposal.jpg",
       "Episode": 12,
       "Vibes": "happy",
+      "Where": "netflix",
       "tags": {
         "Must-watch": "false",
         "Rom-com": "true",
@@ -21,6 +22,7 @@
       "Poster": "https://upload.wikimedia.org/wikipedia/en/5/52/Twinkling_Watermelon.jpg",
       "Episode": 16,
       "Vibes": "blue",
+      "Where": "dramacool",
       "tags": {
         "Must-watch": "false",
         "Rom-com": "true",
@@ -37,6 +39,7 @@
       "Poster": "https://upload.wikimedia.org/wikipedia/en/d/da/King_the_Land.png",
       "Episode": 16,
       "Vibes": "happy",
+      "Where": "dramacool",
       "tags": {
         "Must-watch": "true",
         "Rom-com": "true",
@@ -53,6 +56,7 @@
       "Poster": "https://upload.wikimedia.org/wikipedia/en/e/e7/Mr._Queen_poster.jpg",
       "Episode": 20,
       "Vibes": "happy",
+      "Where": "dramacool",
       "tags": {
         "Must-watch": "false",
         "Rom-com": "true",
@@ -69,6 +73,7 @@
       "Poster": "https://upload.wikimedia.org/wikipedia/en/9/9d/Strange_Lawyer_Woo_Young-woo.png",
       "Episode": 16,
       "Vibes": "neutral",
+      "Where": "dramacool",
       "tags": {
         "Must-watch": "false",
         "Rom-com": "false",
@@ -85,6 +90,7 @@
       "Poster": "https://upload.wikimedia.org/wikipedia/en/9/9f/Strong_Woman_Gang_Nam-soon.jpg",
       "Episode": 16,
       "Vibes": "happy",
+      "Where": "dramacool",
       "tags": {
         "Must-watch": "false",
         "Rom-com": "false",
@@ -101,6 +107,7 @@
       "Poster": "https://upload.wikimedia.org/wikipedia/en/5/54/Welcome_to_Samdal-ri.jpg",
       "Episode": 16,
       "Vibes": "blue",
+      "Where": "dramacool",
       "tags": {
         "Must-watch": "false",
         "Rom-com": "false",
@@ -117,6 +124,7 @@
       "Poster": "https://upload.wikimedia.org/wikipedia/en/3/3f/The_Moon_Embracing_the_Sun_poster.jpg",
       "Episode": 20,
       "Vibes": "blue",
+      "Where": "dramacool",
       "tags": {
         "Must-watch": "false",
         "Rom-com": "false",
@@ -133,6 +141,7 @@
       "Poster": "https://upload.wikimedia.org/wikipedia/en/9/92/Buried_Hearts_poster.png",
       "Episode": 16,
       "Vibes": "blue",
+      "Where": "dramacool",
       "tags": {
         "Must-watch": "false",
         "Rom-com": "false",
@@ -149,6 +158,7 @@
       "Poster": "https://upload.wikimedia.org/wikipedia/en/6/60/The_Queen%27s_Umbrella.jpg",
       "Episode": 16,
       "Vibes": "blue",
+      "Where": "dramacool",
       "tags": {
         "Must-watch": "false",
         "Rom-com": "false",
@@ -165,6 +175,7 @@
       "Poster": "https://upload.wikimedia.org/wikipedia/en/0/05/My_Demon.jpg",
       "Episode": 16,
       "Vibes": "thriller",
+      "Where": "dramacool",
       "tags": {
         "Must-watch": "false",
         "Rom-com": "false",
@@ -181,6 +192,7 @@
       "Poster": "https://images.ctfassets.net/4cd45et68cgf/68U6dSWP5x7rqVVdLYGvO4/a8b289230f638addd5676e7dccc7137c/Gyeongseong_Creature_S2_Main_KA.jpg?w=1200",
       "Episode": 10,
       "Vibes": "thriller",
+      "Where": "dramacool",
       "tags": {
         "Must-watch": "true",
         "Rom-com": "false",
@@ -197,6 +209,7 @@
       "Poster": "https://m.media-amazon.com/images/M/MV5BNzVlZTU4ZDgtYWU5Ny00NWQzLWIyOWYtNDk5YWM5OGM0ZjRkXkEyXkFqcGc@._V1_.jpg",
       "Episode": 10,
       "Vibes": "thriller",
+      "Where": "dramacool",
       "tags": {
         "Must-watch": "false",
         "Rom-com": "false",

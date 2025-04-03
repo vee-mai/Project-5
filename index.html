@@ -15,41 +15,43 @@
             <h1 class="title">K-dramas based on vibes</h1>
         </aside>
 
+        <section class="filter">
+            <h3>
+                What vibes are you looking for?
+            </h3>
+            <div class="bttn-container">
+                <button class="filter-button" id="happy-filter">
+                    <img class="happy-filter" src="assets/Smiley.png"></img>
+                    <p class="vibes-title">Happy</p>
+                </button>
+                <button class="filter-button" id="blue-filter">
+                    <img class="sad-filter" src="assets/Smiley.png"></img>
+                    <p class="vibes-title">Blue</p>
+                </button> 
+                <button class="filter-button" id="thriller-filter">
+                    <img class="thriller-filter" src="assets/Smiley.png"></img>
+                    <p class="vibes-title">Thriller</p>
+                </button> 
+                <button class="filter-button" id="neutral-filter">
+                    <img class="neutral-filter" src="assets/Smiley.png"></img>
+                    <p class="vibes-title">Neutral</p>
+                </button> 
+            </div>
+        </section>
+
         <div class="search-container">
             <form role="search">
                 <input type="search" id="mySearch" placeholder="search k-dramas" oninput="filterByName(event)"/>
                 <button id="search-button"  onclick="search()">Search</button>
             </form>    
         </div>
-
         
-        <section class="filter">
-            <h3>
-                What vibes are you looking for?
-            </h3>
-            <button class="filter-button" id="happy-filter">
-                <img class="happy-filter" src="assets/Smiley.png"></img>
-                <h3 class="vibes-title">Happy</h3>
-            </button>
-            <button class="filter-button" id="blue-filter">
-                <img class="sad-filter" src="assets/Smiley.png"></img>
-                <h3 class="vibes-title">Blue</h3>
-            </button> 
-            <button class="filter-button" id="thriller-filter">
-                <img class="thriller-filter" src="assets/Smiley.png"></img>
-                <h3 class="vibes-title">Thriller</h3>
-            </button> 
-            <button class="filter-button" id="neutral-filter">
-                <img class="neutral-filter" src="assets/Smiley.png"></img>
-                <h3 class="vibes-title">Neutral</h3>
-            </button> 
-        </section>
 
-        <section class="advance-filter">
+        <!-- <section class="advance-filter">
             <h3>More filter</h3>
-        </section>
+        </section> -->
 
-        <section>
+        <section class="data-container">
             <ul id="data-list"></ul>
         </section>
         

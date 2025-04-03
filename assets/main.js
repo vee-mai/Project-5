@@ -2,11 +2,13 @@
 const renderItems = (data) => {
 	// The `ul` where the items will be inserted
 	const dataList = document.getElementById('data-list')
+    console.log("dataList", dataList)
 
 	// Loop through each item in the data array
 	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 	data.forEach((item) => {
 		let KdramaCard = '' // Set an empty class variable
+        console.log("item", item)
 
 		// Conditional if this is `false` (“not true”)
 		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
@@ -18,11 +20,10 @@ const renderItems = (data) => {
 		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 		let listItem =
 			`
-			<li class="kdrama-card vibes-${item.Vibes} tags-must-watch-${item.tags['Must-watch']}" id="${KdramaCard}">
+			<li class="vibes${item.Vibes}" id="${KdramaCard}">
 					<h2>${item.Title}</h2>
 					<img class="poster" src="${item.Poster}">
-					<p>Released in <time>${item.Year}</time></p>
-					<p><em>${item.VeesRating}</em></p>
+					<p>where to watch${item.Where}</p>
 				</li>
 			`
 
@@ -46,22 +47,30 @@ fetch('assets/data.json')
 // Let Javascript know about my buttons and elements 
 let kdramalBlocks = document.querySelector('#data-list')
 let happyFilter= document.querySelector('#happy-filter')
-let sadFilter= document.querySelector('#sad-filter')
-let spontaneousFilter= document.querySelector('#spontaneous-filter')
+let blueFilter= document.querySelector('#blue-filter')
+let thrillerFilter= document.querySelector('#thriller-filter')
+let neutralFilter= document.querySelector('#neutral-filter')
 
 // Add onclick for my buttons
 happyFilter.onclick = () => {
-	kdramalBlocks.classList.add('show-mustWatch', 'show-romCom', 'show-heartFelt', 'show-light')
-    kdramalBlocks.classList.remove('show-all', 'show-supernatural','show-emotional', 'show-historical')
+	kdramalBlocks.classList.add('show-happy')
+    kdramalBlocks.classList.remove('show-blue', 'show-thriller','show-neutral')
 }
 
-sadFilter.onclick = () => {
-    kdramalBlocks.classList.add('show-mustWatch', )
-    kdramalBlocks.classList.remove('show-all', 'show-emotional', 'show-heartFelt' )
+blueFilter.onclick = () => {
+    kdramalBlocks.classList.add('show-blue', )
+    kdramalBlocks.classList.remove('show-happy', 'show-thriller', 'show-neutral' )
 }
 
-spontaneousFilter.onclick = () => {
-    kdramalBlocks.classList.add('show-all')
+thrillerFilter.onclick = () => {
+    console.log("thriller")
+    kdramalBlocks.classList.add('show-thriller')
+    kdramalBlocks.classList.remove('show-happy', 'show-blue', 'show-neutral' )
+}
+
+neutralFilter.onclick = () => {
+    kdramalBlocks.classList.add('show-neutral')
+    kdramalBlocks.classList.remove('show-happy', 'show-blue', 'show-thriller' )
 }
 
 // search filter 
