@@ -25,18 +25,35 @@
                     <p class="vibes-title">Happy</p>
                 </button>
                 <button class="filter-button" id="blue-filter">
-                    <img class="sad-filter" src="assets/Smiley.png"></img>
+                    <img class="sad-filter" src="assets/crying.png"></img>
                     <p class="vibes-title">Blue</p>
                 </button> 
                 <button class="filter-button" id="thriller-filter">
-                    <img class="thriller-filter" src="assets/Smiley.png"></img>
+                    <img class="thriller-filter" src="assets/thriller.png"></img>
                     <p class="vibes-title">Thriller</p>
                 </button> 
                 <button class="filter-button" id="neutral-filter">
-                    <img class="neutral-filter" src="assets/Smiley.png"></img>
+                    <img class="neutral-filter" src="assets/sad.png"></img>
                     <p class="vibes-title">Neutral</p>
                 </button> 
             </div>
+
+            <label for="kdrama-select">More Filter</label>
+             <select name="tags" id="tags-select">
+                <option value="">--Please choose an option--</option>
+                <option value="must-watch">Must Watch</option>
+                <option value="rom-com">Rom-Com</option>
+                <option value="supernatural">supernatural</option>
+                <option value="heartfelt">Heartfell</option>
+                <option value="historical">Historical</option>
+                <option value="emotional">Emotional</option>
+                <option value="light">Light</option>
+            </select>
+            <div>
+				<!-- `button` for in-page actions: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button -->
+				<button type="reset" id="reset-button">Reset</button>
+				<button type="submit">Add</button>
+			</div>
         </section>
 
         <div class="search-container">
@@ -44,7 +61,6 @@
                 <input type="search" id="mySearch" placeholder="search k-dramas" oninput="filterByName(event)"/>
                 <button id="search-button"  onclick="search()">Search</button>
             </form> 
-            <p class="filter-button"> Filter</p>   
         </div>
         
 
