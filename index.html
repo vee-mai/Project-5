@@ -37,11 +37,28 @@
                     <p class="vibes-title">Neutral</p>
                 </button> 
             </div>
+            <div class="bttn-container">
+                <button class="filter-button" id="emotional-filter">
+                    <img class="emotional-filter" src="assets/Smiley.png"></img>
+                    <p class="vibes-title">Emotional</p>
+                </button>
+                <button class="filter-button" id="nostalgic-filter">
+                    <img class="nostalgic-filter" src="assets/crying.png"></img>
+                    <p class="vibes-title">Nostalgic</p>
+                </button> 
+                <button class="filter-button" id="heartfelt-filter">
+                    <img class="heartfelt-filter" src="assets/thriller.png"></img>
+                    <p class="vibes-title">Heartfell</p>
+                </button> 
+                <button class="filter-button" id="neutral-filter">
+                    <img class="neutral-filter" src="assets/sad.png"></img>
+                    <p class="vibes-title">Light</p>
+                </button> 
+            </div>
 
             <label for="kdrama-select">More Filter</label>
              <select name="tags" id="tags-select">
-                <option value="">--Please choose an option--</option>
-                <option value="must-watch">Must Watch</option>
+                <option value="">--Where to watch--</option>
                 <option value="rom-com">Rom-Com</option>
                 <option value="supernatural">supernatural</option>
                 <option value="heartfelt">Heartfell</option>
@@ -54,14 +71,13 @@
 				<button type="reset" id="reset-button">Reset</button>
 				<button type="submit">Add</button>
 			</div>
+            <div class="search-container">
+                <form role="search">
+                    <input type="search" id="mySearch" placeholder="search k-dramas" oninput="filterByName(event)"/>
+                    <button id="search-button"  onclick="search()">Search</button>
+                </form> 
+            </div>
         </section>
-
-        <div class="search-container">
-            <form role="search">
-                <input type="search" id="mySearch" placeholder="search k-dramas" oninput="filterByName(event)"/>
-                <button id="search-button"  onclick="search()">Search</button>
-            </form> 
-        </div>
         
 
         <!-- <section class="advance-filter">

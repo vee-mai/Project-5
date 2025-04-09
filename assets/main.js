@@ -8,12 +8,15 @@ const renderItems = (data) => {
 	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 	data.forEach((item) => {
 		let KdramaCard = '' // Set an empty class variable
-        console.log("item", item)
-
+        
 		// Conditional if this is `false` (“not true”)
 		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
-		if (!item.alsoWasWriter) {
-			KdramaCard = 'faded' // Update the variable
+		if (!item.KdramaCard) {
+			KdramaCard = 'kdramaCard' // Update the variable
+		}
+
+		if (!item.KdramaCard){
+			iconUrl='/assets/netflix.png'
 		}
 
 		// Make a “template literal” as we have before, inserting your data (and maybe the class)
@@ -24,6 +27,7 @@ const renderItems = (data) => {
 					<h2>${item.Title}</h2>
 					<img class="poster" src="${item.Poster}">
 					<p>watch on ${item.Where}</p>
+					<img class="iconUrl" src="${item.url}">
 				</li>
 			`
 
