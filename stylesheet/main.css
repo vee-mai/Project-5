@@ -24,7 +24,7 @@ h3{
 }
 
 p{
-    color: #121212 
+    color: #121212;
     font-size:14px;
     padding-top:0.5rem;
 }
@@ -34,7 +34,7 @@ body{
     font-size:16px;
     background-color:beige;
     /* background-image: url('../assets/mobile_bg.jpg'); */
-    background-size: cover;
+    /* background-size: cover; */
     height:100vh;
 }
 
@@ -163,7 +163,6 @@ img{
     border-radius: 1rem;
     box-shadow: 0 4px 30px #0000001a;
     backdrop-filter: blur(3px);
-    width: max-content;
 }
 
 .show-happy{
@@ -207,10 +206,6 @@ img{
 }
 
 .data-container{
-    position:fixed;
-    width:80vw;
-    height:fit-content;
-    top:50%;
     /* background-color: white; */
     box-shadow: 0 4px 30px #0000001a;
     backdrop-filter: blur(3px);
