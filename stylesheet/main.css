@@ -1,42 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
 	--spacing: 1em;
+    --main-typeface:
 }
 
 h1{
-    font-family: "Manrope", sans-serif;
-    font-size:30px;
-    font-weight:600;
-    color:#364c84;
-    padding-bottom:0.3rem;
+    font-family:"Jua", sans-serif;
+    font-size:38px;
+    font-weight:400;
+    color:#6b768f;
+    padding-bottom:-5px;
 }
 
 h2{
-    font-family:"Open Sans", sans-serif;
-    font-size:16px;
+    font-family:"Inter", sans-serif;
+    font-size:18px;
     font-weight:400;
-    color:#364c84;
+    color:#6b768f;
 }
 
 h3{
-    font-family:"Open Sans", sans-serif;
-    font-size:14px;
-    color: #121212;
+    font-family:"Inter", sans-serif;
+    font-size:16px;
+    color:#6b768f;
 }
 
 p{
-    font-family:"Open Sans", sans-serif;
-    color: #364c84;
-    font-size:14px;
+    font-family:"Inter", sans-serif;
+    color: #6b768f;
+    font-size:16px;
     padding-top:0.5rem;
 }
 
 body{
-    font-family:"Open Sans", sans-serif;
+    font-family:"Inter", sans-serif;
     font-size:14px;
-    background-color:#fffdf5;
+    background-color:#f9f7ef;
     height:100vh;
     scroll-behavior: smooth;
 }
