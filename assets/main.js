@@ -8,15 +8,19 @@ const renderItems = (data) => {
 	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 	data.forEach((item) => {
 		let KdramaCard = '' // Set an empty class variable
+		
+		let iconUrl = '/assets/netflix.png'
         
 		// Conditional if this is `false` (“not true”)
 		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
 		if (!item.KdramaCard) {
 			KdramaCard = 'kdramaCard' // Update the variable
 		}
-
-		if (!item.KdramaCard){
-			iconUrl='/assets/netflix.png'
+		
+		if (item.Where==='hulu'){
+			iconUrl='/assets/hulu.png'
+		} else if (item.Where === 'viki') {
+			iconUrl = 'assets/viki.png'
 		}
 
 		// Make a “template literal” as we have before, inserting your data (and maybe the class)
@@ -27,8 +31,8 @@ const renderItems = (data) => {
 					<h2>${item.Title}</h2>
 					<img class="poster" src="${item.Poster}">
 					<p>watch on ${item.Where}</p>
-					<img class="iconUrl" src="${item.url}">
-				</li>
+					<img class="" src="${iconUrl}">
+			</li>
 			`
 
 		dataList.insertAdjacentHTML('beforeend', listItem) // Add it to the `ul`!
@@ -59,6 +63,7 @@ let neutralFilter= document.querySelector('#neutral-filter')
 happyFilter.onclick = () => {
 	kdramalBlocks.classList.add('show-happy')
     kdramalBlocks.classList.remove('show-blue', 'show-thriller','show-neutral')
+	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 }
 
 blueFilter.onclick = () => {
@@ -77,23 +82,6 @@ neutralFilter.onclick = () => {
     kdramalBlocks.classList.remove('show-happy', 'show-blue', 'show-thriller' )
 }
 
-// search filter 
-// https://medium.com/@cgustin/tutorial-simple-search-filter-with-vanilla-javascript-fdd15b7640bf
-
-document.getElementById('mySearch').addEventListener('input', filterByName);
-
-function filterByName(event) {
-    const searchTerm = event.target.value.trim().toLowerCase();
-    const listItems = document.querySelectorAll("#data-list li");
-  
-    listItems.forEach(function(item) {
-      item.style.display = 'revert';
-  
-      if (!item.innerText.toLowerCase().includes(searchTerm)) {
-        item.style.display = 'none';
-      }
-    })
-}
 
 // // filter by vibes
 // document.addEventListener("DOMContentLoaded", function () {

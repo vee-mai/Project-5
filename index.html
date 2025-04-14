@@ -11,36 +11,51 @@
 	</head>
 	<body>
         <aside class="header">
-            <h2 class="welcome-text">Find</h2>
-            <h1 class="title">K-dramas based on vibes</h1>
+            <h1 class="welcome-text">Start with a feeling</h2>
+            <h2 class="title">Pick a vibe, we’ll find the K-Dramas</h1>
         </aside>
 
-        <section class="filter">
-            <h3>
-                What vibes are you looking for?
-            </h3>
-            <div class="bttn-container">
-                <button class="filter-button" id="happy-filter">
-                    <img class="happy-filter" src="assets/Smiley.png"></img>
-                    <p class="vibes-title">Happy</p>
-                </button>
-                <button class="filter-button" id="blue-filter">
-                    <img class="sad-filter" src="assets/crying.png"></img>
-                    <p class="vibes-title">Blue</p>
-                </button> 
-                <button class="filter-button" id="thriller-filter">
-                    <img class="thriller-filter" src="assets/thriller.png"></img>
-                    <p class="vibes-title">Thriller</p>
-                </button> 
-                <button class="filter-button" id="neutral-filter">
-                    <img class="neutral-filter" src="assets/sad.png"></img>
-                    <p class="vibes-title">Neutral</p>
-                </button> 
-            </div>
-            <div class="bttn-container">
+        <section class="filter-container">
+                <div class="bttn-items">
+                    <button class="filter-button" id="happy-filter">
+                        <img class="happy-filter" src="assets/feel-good.png"></img>
+                        <p class="vibes-title">Feel Good</p>
+                    </button>
+                    <button class="filter-button" id="blue-filter">
+                        <img class="sad-filter" src="assets/ugly-cry.png"></img>
+                        <p class="vibes-title">Ugly Cry</p>
+                    </button> 
+                    <button class="filter-button" id="thriller-filter">
+                        <img class="thriller-filter" src="assets/thriller.png"></img>
+                        <p class="vibes-title">Thriller</p>
+                    </button> 
+                    <button class="filter-button" id="romantic-filter">
+                        <img class="romantic-filter" src="assets/romantic.png"></img>
+                        <p class="vibes-title">Romantic</p>
+                    </button> 
+                </div>
+                <div class="bttn-items">
+                    <button class="filter-button" id="happy-filter">
+                        <img class="mysterious-filter" src="assets/Smiley.png"></img>
+                        <p class="vibes-title">Mysterious</p>
+                    </button>
+                    <button class="filter-button" id="blue-filter">
+                        <img class="nostalgic-filter" src="assets/crying.png"></img>
+                        <p class="vibes-title">Nostalgic</p>
+                    </button> 
+                    <button class="filter-button" id="thriller-filter">
+                        <img class="cheesy-filter" src="assets/cheesy.png"></img>
+                        <p class="vibes-title">Cheesy</p>
+                    </button> 
+                    <button class="filter-button" id="neutral-filter">
+                        <img class="random-filter" src="assets/neutral.png"></img>
+                        <p class="vibes-title">Spontaneous</p>
+                    </button> 
+                </div>
+            <!-- <div class="bttn-container">
                 <button class="filter-button" id="emotional-filter">
                     <img class="emotional-filter" src="assets/Smiley.png"></img>
-                    <p class="vibes-title">Emotional</p>
+                    <p class="vibes-title">Mysterious</p>
                 </button>
                 <button class="filter-button" id="nostalgic-filter">
                     <img class="nostalgic-filter" src="assets/crying.png"></img>
@@ -48,35 +63,13 @@
                 </button> 
                 <button class="filter-button" id="heartfelt-filter">
                     <img class="heartfelt-filter" src="assets/thriller.png"></img>
-                    <p class="vibes-title">Heartfell</p>
+                    <p class="vibes-title">cheesy</p>
                 </button> 
                 <button class="filter-button" id="neutral-filter">
                     <img class="neutral-filter" src="assets/sad.png"></img>
-                    <p class="vibes-title">Light</p>
+                    <p class="vibes-title">random</p>
                 </button> 
-            </div>
-
-            <label for="kdrama-select">More Filter</label>
-             <select name="tags" id="tags-select">
-                <option value="">--Where to watch--</option>
-                <option value="rom-com">Rom-Com</option>
-                <option value="supernatural">supernatural</option>
-                <option value="heartfelt">Heartfell</option>
-                <option value="historical">Historical</option>
-                <option value="emotional">Emotional</option>
-                <option value="light">Light</option>
-            </select>
-            <div>
-				<!-- `button` for in-page actions: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button -->
-				<button type="reset" id="reset-button">Reset</button>
-				<button type="submit">Add</button>
-			</div>
-            <div class="search-container">
-                <form role="search">
-                    <input type="search" id="mySearch" placeholder="search k-dramas" oninput="filterByName(event)"/>
-                    <button id="search-button"  onclick="search()">Search</button>
-                </form> 
-            </div>
+            </div> -->
         </section>
         
 
