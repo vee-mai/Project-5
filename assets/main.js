@@ -156,6 +156,7 @@ uglycryFilter.onclick = () => {
     kdramalBlocks.classList.add('show-blue', )
     kdramalBlocks.classList.remove('show-feelGood', 'show-thriller', 'show-romantic' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
+	showNavButtons();
 }
 
 thrillerFilter.onclick = () => {
@@ -163,36 +164,42 @@ thrillerFilter.onclick = () => {
     kdramalBlocks.classList.add('show-thriller')
     kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-romantic' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
+	showNavButtons();
 }
 
 romanticFilter.onclick = () => {
     kdramalBlocks.classList.add('show-romantic')
     kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
+	showNavButtons();
 }
 
 mysteriousFilter.onclick = () => {
     kdramalBlocks.classList.add('show-mysterious')
     kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
+	showNavButtons();
 }
 
 nostalgicFilter.onclick = () => {
     kdramalBlocks.classList.add('show-nostalgic')
     kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
+	showNavButtons();
 }
 
 cheesyFilter.onclick = () => {
     kdramalBlocks.classList.add('show-cheesy')
     kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
+	showNavButtons();
 }
 
 spontaneousFilter.onclick = () => {
     kdramalBlocks.classList.add('show-spontaneous')
     kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
+	showNavButtons();
 }
 
 // Creating horizontal scroll by one card at a time
