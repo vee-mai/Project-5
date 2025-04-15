@@ -54,32 +54,63 @@ fetch('assets/data.json')
 
 // Let Javascript know about my buttons and elements 
 let kdramalBlocks = document.querySelector('#data-list')
-let happyFilter= document.querySelector('#happy-filter')
-let blueFilter= document.querySelector('#blue-filter')
+let feelgoodFilter= document.querySelector('#feelGood-filter')
+let uglycryFilter= document.querySelector('#uglyCry-filter')
 let thrillerFilter= document.querySelector('#thriller-filter')
-let neutralFilter= document.querySelector('#neutral-filter')
+let romanticFilter= document.querySelector('#romantic-filter')
+let mysteriousFilter=document.querySelector('#mysterious-filter')
+let nostalgicFilter=document.querySelector('#nostalgic-filter')
+let cheesyFilter=document.querySelector('#cheesy-filter')
+let spontaneousFilter=document.querySelector('#spontaneous-filter')
 
 // Add onclick for my buttons
-happyFilter.onclick = () => {
-	kdramalBlocks.classList.add('show-happy')
-    kdramalBlocks.classList.remove('show-blue', 'show-thriller','show-neutral')
+feelgoodFilter.onclick = () => {
+	kdramalBlocks.classList.add('show-feelGood')
+    kdramalBlocks.classList.remove('show-uglyCry', 'show-thriller','show-romantic')
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 }
 
-blueFilter.onclick = () => {
+uglycryFilter.onclick = () => {
     kdramalBlocks.classList.add('show-blue', )
-    kdramalBlocks.classList.remove('show-happy', 'show-thriller', 'show-neutral' )
+    kdramalBlocks.classList.remove('show-feelGood', 'show-thriller', 'show-romantic' )
+	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 }
 
 thrillerFilter.onclick = () => {
     console.log("thriller")
     kdramalBlocks.classList.add('show-thriller')
-    kdramalBlocks.classList.remove('show-happy', 'show-blue', 'show-neutral' )
+    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-romantic' )
+	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 }
 
-neutralFilter.onclick = () => {
-    kdramalBlocks.classList.add('show-neutral')
-    kdramalBlocks.classList.remove('show-happy', 'show-blue', 'show-thriller' )
+romanticFilter.onclick = () => {
+    kdramalBlocks.classList.add('show-romantic')
+    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller' )
+	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
+}
+
+mysteriousFilter.onclick = () => {
+    kdramalBlocks.classList.add('show-mysterious')
+    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller' )
+	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
+}
+
+nostalgicFilter.onclick = () => {
+    kdramalBlocks.classList.add('show-nostalgic')
+    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller' )
+	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
+}
+
+cheesyFilter.onclick = () => {
+    kdramalBlocks.classList.add('show-cheesy')
+    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller' )
+	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
+}
+
+spontaneousFilter.onclick = () => {
+    kdramalBlocks.classList.add('show-spontaneous')
+    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller' )
+	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 }
 
 

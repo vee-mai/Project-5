@@ -106,13 +106,13 @@ form{
 }
 
 
-.happy-filter{
+.feel-good-filter{
     display: block;
     width:8rem;
     height:8rem;
 }
 
-.sad-filter{
+.ugly-cry-filter{
     display: block;
     width:8rem;
     height:8rem;
@@ -148,24 +148,12 @@ form{
     height:8rem;
 }
 
-.random-filter{
+.spontaneous-filter{
     display: block;
     width:8rem;
     height:8rem;
 }
 
-
-
-.search-icon{
-    display:block;
-    width:20px;
-    height:20px;
-}
-
-ul {
-	/* display:flex;
-    flex-direction:row; */
-}
 
 li {
 	display: flex;
@@ -173,19 +161,6 @@ li {
     gap:1rem;
 }
 
-
-
-input:invalid ~ span::after {
-    content: "✖";
-    padding-left:1rem;
-    position: absolute;
-  }
-  
-  input:valid ~ span::after {
-    content: "✓";
-    padding-left:1rem;
-    position: absolute;
-  }
 
 img{
     display:block;
@@ -211,22 +186,22 @@ ul {
     }
 }
 
-.show-happy{
+.show-feelGood{
     li{
 		display:none;
 	}
 
-	li.vibeshappy {
+	li.vibesfeelGood {
 		display:block;
 	}
 }
 
-.show-blue{
+.show-uglyCry{
     li{
 		display:none;
 	}
 
-	li.vibesblue {
+	li.vibesuglyCry {
 		display:block;
 	}
 }
@@ -241,15 +216,56 @@ ul {
 	}
 }
 
-.show-neutral{
+.show-romantic{
     li{
 		display:none;
 	}
 
-	li.vibesneutral {
+	li.vibesromantic {
 		display:block;
 	}
 }
+
+.show-mysterious{
+    li{
+		display:none;
+	}
+
+	li.vibesmysterious {
+		display:block;
+	}
+}
+
+.show-nostalgic{
+    li{
+		display:none;
+	}
+
+	li.vibesnostalgic {
+		display:block;
+	}
+}
+
+.show-cheesy{
+    li{
+		display:none;
+	}
+
+	li.vibescheesy {
+		display:block;
+	}
+}
+
+.show-spontaneous{
+    li{
+		display:none;
+	}
+
+	li.vibesspontaneous {
+		display:block;
+	}
+}
+
 
 .data-container{
     /* background-color: white; */
