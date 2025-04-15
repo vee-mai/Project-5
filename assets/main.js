@@ -1,3 +1,29 @@
+// Helper function to map Vibes values to titles
+// Coding assistant from Coding Tutor 
+// Declaring a function named mapVibe
+function mapVibe(vibe) {
+    switch(vibe) {
+        case "feelGood":
+            return "Feel Good";
+        case "uglyCry":
+            return "Ugly Cry";
+        case "thriller":
+            return "Thriller";
+		case "romantic":
+			return "Romantic";
+		case "mysterious":
+			return "Mysterious";
+		case "nostalgic":
+			return "Nostalgic";
+		case "cheesy":
+			return "Cheesy";
+        case "spontaneous":
+            return "Spontaneous";
+        default:
+            return vibe;
+    }
+}
+
 // Function to render your items
 const renderItems = (data) => {
 	// The `ul` where the items will be inserted
@@ -28,10 +54,14 @@ const renderItems = (data) => {
 		let listItem =
 			`
 			<li class="vibes${item.Vibes}" id="${KdramaCard}">
-					<h2>${item.Title}</h2>
+				<div class="card-footer">
+					<p class="vibes-title">${mapVibe(item.Vibes)}</p>
+					<a href="#" class="back-to-top" onclick="scrollToTop(event)">&#8593;</a>
+				</div>
 					<img class="poster" src="${item.Poster}">
-					<p>watch on ${item.Where}</p>
-					<img class="" src="${iconUrl}">
+					<h2>${item.Title}</h2>
+					<p>${item.Where}</p>
+					<img class="streamIcon" src="${iconUrl}">
 			</li>
 			`
 
@@ -41,6 +71,35 @@ const renderItems = (data) => {
 	})
 }
 
+	function scrollToTop(event) {
+		event.preventDefault();
+		window.scrollTo({ top:0, behaviour:'smooth'});
+	}
+
+	function createNavButtons() {
+		const dataContainer = document.querySelector('.data-container')
+	}
+
+	// Creating Previous Button
+	const prevBtn = document.CreateElement('button');
+	prevBtn.id = 'prevBtn'
+	preBtn.textContent = 'Previous Movie';
+	preBtn.style.display='none'; //initially hidden
+
+	// Creating Next Button
+	const prevBtn = document.CreateElement('button');
+	prevBtn.id = 'prevBtn'
+	preBtn.textContent = 'Next Movie';
+	preBtn.style.display='none'; //initially hidden
+
+	// Append buttons to the container
+	dataContainer.appendChild(prevBtn);
+	dataContainer.appendChild(nextBtn);
+
+	// Return the buttons for further use (e.g., event listeners)
+	return {prevBtn, nextBtn};
+}
+
 // Fetch gets your (local) JSON file…
 // https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 fetch('assets/data.json')
@@ -48,7 +107,23 @@ fetch('assets/data.json')
 	.then(data => {
 		// And passes the data to the function, above!
 		renderItems(data)
-	})
+		//create nav buttons 
+		const { prevBtn, nextBtn } = createNavButtons();
+
+		// Define dataList
+		const dataList = document.getElementById('data-list');
+
+		// Add event listeners for nav buttons
+		nextBtn.addEventListener('click',() => {
+			const cardWidth = dataList.clientWidth;
+			dataList.scrollBy ({ left:cardWidth, behaviour:'smooth'});
+		});
+
+		prevBtn.addEventListener('click', () => {
+			const cardWidth = dataList.clientWidth;
+			dataList.scrollBy({ left: -cardwidth, behavior:'smooth'});
+		});
+	});
 
 // // filtering 
 
@@ -63,12 +138,20 @@ let nostalgicFilter=document.querySelector('#nostalgic-filter')
 let cheesyFilter=document.querySelector('#cheesy-filter')
 let spontaneousFilter=document.querySelector('#spontaneous-filter')
 
+function showNavButtons(){
+	const nextBtn = document.getElementById('nextBtn');
+	const prevBtn = document.getElementbyId('prevBtn');
+	nextBtn.style.display ='block';
+	prevBtn.style.display ='block';
+}
+
 // Add onclick for my buttons
 feelgoodFilter.onclick = () => {
 	kdramalBlocks.classList.add('show-feelGood')
     kdramalBlocks.classList.remove('show-uglyCry', 'show-thriller','show-romantic')
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
-}
+	showNavButtons();
+};
 
 uglycryFilter.onclick = () => {
     kdramalBlocks.classList.add('show-blue', )
@@ -113,37 +196,8 @@ spontaneousFilter.onclick = () => {
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 }
 
-
-// // filter by vibes
-// document.addEventListener("DOMContentLoaded", function () {
-//     if (typeof data === "undefined") {
-//         console.error("Data is not loaded. Check if data.js is properly linked.");
-//         return;
-//     }
-
-//     // connects data from data.json
-//     displayKdrama(data);
-
-//     // filter option by vibes. Show the vibes that was clicked.
-//     document.getElementById("happy-filter").addEventListener("click", function () {
-//         filterByVibes("happy");
-//     });
-
-//     document.getElementById("sad-filter").addEventListener("click", function () {
-//         filterByVibes("sad");
-//     });
-
-//     document.getElementById("spontaneous-filter").addEventListener("click", function () {
-//         filterByVibes("spontaneous");
-//     });
-// });
-
-// // SECTION: filter function by vibes
-// function filterByVibes(Vibes) {
-//     // Goes through each kdrama list checks if they match the vibes
-//     const filteredData = data.filter(person => person.Vibes === Vibes);
-
-//     // Will display the kdrama that is for certain vibes
-//     displayKdrama(filteredData);
-// }
-
+document.addEventListener('DOMContentLoaded', function(){
+	const nextBtn = document.getElementById ('nextBtn');
+	const prevBtn = document.getElementById ('prevBtn');
+	const dataList = document.getElementById('data-list');
+})

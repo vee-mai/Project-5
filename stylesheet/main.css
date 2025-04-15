@@ -266,6 +266,10 @@ ul {
 	}
 }
 
+.streamIcon{
+    width:2rem;
+    height:2rem;
+}
 
 .data-container{
     /* background-color: white; */
