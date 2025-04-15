@@ -78,26 +78,25 @@ const renderItems = (data) => {
 
 	function createNavButtons() {
 		const dataContainer = document.querySelector('.data-container')
-	}
-
-	// Creating Previous Button
-	const prevBtn = document.CreateElement('button');
-	prevBtn.id = 'prevBtn'
-	preBtn.textContent = 'Previous Movie';
-	preBtn.style.display='none'; //initially hidden
-
-	// Creating Next Button
-	const prevBtn = document.CreateElement('button');
-	prevBtn.id = 'prevBtn'
-	preBtn.textContent = 'Next Movie';
-	preBtn.style.display='none'; //initially hidden
-
-	// Append buttons to the container
-	dataContainer.appendChild(prevBtn);
-	dataContainer.appendChild(nextBtn);
-
-	// Return the buttons for further use (e.g., event listeners)
-	return {prevBtn, nextBtn};
+	
+		// Creating Previous Button
+		const prevBtn = document.createElement('button');
+		prevBtn.id = 'prevBtn'
+		prevBtn.textContent = 'Previous Movie';
+		prevBtn.style.display = 'none'; //initially hidden
+	
+		// Creating Next Button
+		const nextBtn = document.createElement('button');
+		nextBtn.id = 'nextBtn'
+		nextBtn.textContent = 'Next Movie';
+		nextBtn.style.display = 'none'; //initially hidden
+	
+		// Append buttons to the container
+		dataContainer.appendChild(prevBtn);
+		dataContainer.appendChild(nextBtn);
+	
+		// Return the buttons for further use (e.g., event listeners)
+		return {prevBtn, nextBtn};
 }
 
 // Fetch gets your (local) JSON file…
@@ -140,7 +139,7 @@ let spontaneousFilter=document.querySelector('#spontaneous-filter')
 
 function showNavButtons(){
 	const nextBtn = document.getElementById('nextBtn');
-	const prevBtn = document.getElementbyId('prevBtn');
+	const prevBtn = document.getElementById('prevBtn');
 	nextBtn.style.display ='block';
 	prevBtn.style.display ='block';
 }
