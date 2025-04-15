@@ -196,8 +196,55 @@ spontaneousFilter.onclick = () => {
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 }
 
+// Creating horizontal scroll by one card at a time
 document.addEventListener('DOMContentLoaded', function(){
 	const nextBtn = document.getElementById ('nextBtn');
 	const prevBtn = document.getElementById ('prevBtn');
 	const dataList = document.getElementById('data-list');
-})
+
+	// Initially, disable the back button if already at the start
+    prevBtn.disabled = dataList.scrollLeft <= 0;
+    
+	// When "next" is clicked
+	// If at the end, disable Next button
+	// If scrolling, enable Prev button
+    nextBtn.addEventListener('click', function(){
+        const cardWidth = dataList.clientWidth;
+        dataList.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        
+		//After the scroll (wait 600ms)
+        setTimeout(() => {
+            // Disable next button if we've reached the end
+            if (Math.ceil(dataList.scrollLeft + cardWidth) >= dataList.scrollWidth) {
+                nextBtn.disabled = true;
+            }
+            // Enable the previous button once we've scrolled
+            if(dataList.scrollLeft > 0) {
+                prevBtn.disabled = false;
+            }
+        }, 600);
+    });
+    
+	// When previous is clicked
+	// Scroll to the left by the width of the visible area
+	// cardwidith is cardWidth is the size when scrolling by each time user click Next or Prev
+    prevBtn.addEventListener('click', function(){
+        const cardWidth = dataList.clientWidth;
+        dataList.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+        
+		// After scroll (again wait 600ms)
+		// If at the beginning, disable the Prev button
+		// If there’s still space to scroll right, enable Next
+
+        setTimeout(() => {
+            // Disable previous button if we're at the start
+            if (dataList.scrollLeft <= 0) {
+                prevBtn.disabled = true;
+            }
+            // Enable the next button once we scroll back
+            if(Math.ceil(dataList.scrollLeft + cardWidth) < dataList.scrollWidth) {
+                nextBtn.disabled = false;
+            }
+        }, 600);
+    });
+});
