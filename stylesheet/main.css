@@ -381,3 +381,17 @@ ul{
     padding:var(--s-padding);
     color:var(--text-color);
 }
+
+@media (min-width:1280px){
+
+/* filter buttons container */
+.bttn-items{
+    display:flex;
+    flex-direction:row;
+}
+
+.filter-container{
+    justify-content:center;
+    gap:20px;
+}
+}
