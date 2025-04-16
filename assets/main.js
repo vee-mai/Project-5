@@ -54,20 +54,16 @@ const renderItems = (data) => {
 		let listItem =
 			`
 			<li class="vibes${item.Vibes}" id="${KdramaCard}">
-				<div class="card-footer">
-					<h2>Back to filter</h2>
-					<a href="#" class="back-to-top" onclick="scrollToTop(event)">&#8593;</a>
-				</div>
 				<div class="mapVibe">
 					<p class="mapVibe">${mapVibe(item.Vibes)}</p>
 				</div>
 				<div class="movieCard">
-						<h4> ${item.Title}</h4>
-						<img class="poster" src="${item.Poster}">
-						<div class="watchWhere"
-							<p>Watch on ${item.Where}</p>
-							<img class="streamIcon" src="${iconUrl}">
-						</div>
+					<h4> ${item.Title}</h4>
+					<img class="poster" src="${item.Poster}">
+					<div class="watchWhere"
+						<p>Available on ${item.Where}</p>
+						<img class="streamIcon" src="${iconUrl}">
+					</div>
 				</div>
 			</li>
 			`
@@ -135,11 +131,27 @@ function showNavButtons() {
 	}
 }
 
+// Changing bg color for result cards
+function updateBackground(vibe) {
+    const container = document.querySelector('.data-container');
+    const bgClasses = [
+        'bg-feelgood', 'bg-uglycry', 'bg-thriller', 'bg-romantic',
+        'bg-mysterious', 'bg-nostalgic', 'bg-cheesy', 'bg-spontaneous'
+    ];
+    
+    // Remove all previous bg classes
+    container.classList.remove(...bgClasses);
+
+    // Add the current vibe class (converts "feelGood" → "feelgood" to match with my CSS class names (which are lowercase))
+    container.classList.add(`bg-${vibe.toLowerCase()}`);
+}
+
 // Add onclick for my buttons
 feelgoodFilter.onclick = () => {
-	kdramalBlocks.classList.add('show-feelGood')
+	kdramalBlocks.classList.add('show-feelGood',)
     kdramalBlocks.classList.remove('show-uglyCry', 'show-thriller','show-romantic', 'show-mysterious','show-nostalgic' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
+	updateBackground('feelgood');
 	showNavButtons();
 };
 
@@ -147,6 +159,7 @@ uglycryFilter.onclick = () => {
     kdramalBlocks.classList.add('show-uglyCry', )
     kdramalBlocks.classList.remove('show-feelGood', 'show-thriller', 'show-romantic','show-mysterious','show-nostalgic' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
+	updateBackground('uglycry');
 	showNavButtons();
 }
 
@@ -154,6 +167,7 @@ thrillerFilter.onclick = () => {
     kdramalBlocks.classList.add('show-thriller')
     kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-romantic','show-mysterious','show-nostalgic' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
+	updateBackground('thriller');
 	showNavButtons();
 }
 
@@ -162,6 +176,7 @@ romanticFilter.onclick = () => {
     kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller','show-mysterious','show-nostalgic' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
+	updateBackground('romantic');
 }
 
 mysteriousFilter.onclick = () => {
@@ -169,6 +184,7 @@ mysteriousFilter.onclick = () => {
     kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller','show-romantic','show-nostalgic' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
+	updateBackground('mysterious');
 }
 
 nostalgicFilter.onclick = () => {
@@ -176,6 +192,7 @@ nostalgicFilter.onclick = () => {
     kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller','show-mysterious' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
+	updateBackground('nostalgic');
 }
 
 cheesyFilter.onclick = () => {
@@ -183,6 +200,7 @@ cheesyFilter.onclick = () => {
     kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller','show-mysterious','show-nostalgic' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
+	updateBackground('cheesy');
 }
 
 spontaneousFilter.onclick = () => {
@@ -190,6 +208,7 @@ spontaneousFilter.onclick = () => {
     kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller','show-mysterious','show-nostalgic' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
+	updateBackground('spontaneous');
 }
 
 // Creating horizontal scroll by one card at a time
