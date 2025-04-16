@@ -138,7 +138,6 @@ function showNavButtons() {
 // Add onclick for my buttons
 feelgoodFilter.onclick = () => {
 	kdramalBlocks.classList.add('show-feelGood')
-	showNavButtons();
     kdramalBlocks.classList.remove('show-uglyCry', 'show-thriller','show-romantic', 'show-mysterious','show-nostalgic' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
@@ -152,7 +151,6 @@ uglycryFilter.onclick = () => {
 }
 
 thrillerFilter.onclick = () => {
-    console.log("thriller")
     kdramalBlocks.classList.add('show-thriller')
     kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-romantic','show-mysterious','show-nostalgic' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
