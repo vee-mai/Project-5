@@ -394,4 +394,9 @@ ul{
     justify-content:center;
     gap:20px;
 }
+
+/* my data.json section*/
+.data-container{
+    height:100vh;
+}
 }
