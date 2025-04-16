@@ -55,13 +55,20 @@ const renderItems = (data) => {
 			`
 			<li class="vibes${item.Vibes}" id="${KdramaCard}">
 				<div class="card-footer">
-					<p class="vibes-title">${mapVibe(item.Vibes)}</p>
+					<h2>Back to filter</h2>
 					<a href="#" class="back-to-top" onclick="scrollToTop(event)">&#8593;</a>
 				</div>
-					<img class="poster" src="${item.Poster}">
-					<h2>${item.Title}</h2>
-					<p>${item.Where}</p>
-					<img class="streamIcon" src="${iconUrl}">
+				<div class="mapVibe">
+					<p class="mapVibe">${mapVibe(item.Vibes)}</p>
+				</div>
+				<div class="movieCard">
+						<h4> ${item.Title}</h4>
+						<img class="poster" src="${item.Poster}">
+						<div class="watchWhere"
+							<p>Watch on ${item.Where}</p>
+							<img class="streamIcon" src="${iconUrl}">
+						</div>
+				</div>
 			</li>
 			`
 
