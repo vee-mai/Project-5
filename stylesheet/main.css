@@ -294,24 +294,31 @@ ul {
     scroll-snap-align:center;
 }
 
-#prevBtn {
-    background-image: url("../assets/prevBtn.png");
-    /* margin: 1rem auto;
-    padding: 0.5rem 1rem; */
-    /* background-color: greenyellow; */
-    border:none;
-    color:#121212;
-    cursor: pointer;
+#prevBtn, #nextBtn {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
 }
 
-#nextBtn{
-    background-image: url("../assets/nextBtn.png");
+#prevBtn img, #nextBtn img {
+	width: 2rem;
+	height: 2rem;
+	display: block;
 }
 
 #prevBtn:disabled,
 #nextBtn:disabled {
-    background-color: #ccc;
+    background-color:none;
     cursor: default;
+}
+
+.nav-buttons {
+	display:none;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem; /* space between buttons */
+	margin-top: 1rem;
 }
 
 .card-footer{

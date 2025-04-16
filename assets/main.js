@@ -83,53 +83,30 @@ const renderItems = (data) => {
 		window.scrollTo({ top:0, behaviour:'smooth'});
 	}
 
-	function createNavButtons() {
-		const dataContainer = document.querySelector('.data-container')
-	
-		// Creating Previous Button
-		const prevBtn = document.createElement('button');
-		prevBtn.id = 'prevBtn'
-		prevBtn.innerHTML = '<img src="assets/prevBtn.png" alt="Previous" />';
-		prevBtn.style.display = 'none'; //initially hidden
-	
-		// Creating Next Button
-		const nextBtn = document.createElement('button');
-		nextBtn.id = 'nextBtn'
-		nextBtn.textContent = 'Next Movie';
-		nextBtn.style.display = 'none'; //initially hidden
-	
-		// Append buttons to the container
-		dataContainer.appendChild(prevBtn);
-		dataContainer.appendChild(nextBtn);
-	
-		// Return the buttons for further use (e.g., event listeners)
-		return {prevBtn, nextBtn};
-}
-
 // Fetch gets your (local) JSON file…
 // https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+// Fetch gets your (local) JSON file
 fetch('assets/data.json')
 	.then(response => response.json())
 	.then(data => {
-		// And passes the data to the function, above!
-		renderItems(data)
-		//create nav buttons 
-		const { prevBtn, nextBtn } = createNavButtons();
+		renderItems(data);
 
-		// Define dataList
+		// Get existing buttons from the DOM
+		const prevBtn = document.getElementById('prevBtn');
+		const nextBtn = document.getElementById('nextBtn');
 		const dataList = document.getElementById('data-list');
 
-		// Add event listeners for nav buttons
-		nextBtn.addEventListener('click',() => {
+		nextBtn.addEventListener('click', () => {
 			const cardWidth = dataList.clientWidth;
-			dataList.scrollBy ({ left:cardWidth, behaviour:'smooth'});
+			dataList.scrollBy({ left: cardWidth, behavior: 'smooth' });
 		});
 
 		prevBtn.addEventListener('click', () => {
 			const cardWidth = dataList.clientWidth;
-			dataList.scrollBy({ left: -cardwidth, behavior:'smooth'});
+			dataList.scrollBy({ left: -cardWidth, behavior: 'smooth' });
 		});
 	});
+
 
 // // filtering 
 
@@ -151,17 +128,25 @@ function showNavButtons(){
 	prevBtn.style.display ='block';
 }
 
+function showNavButtons() {
+	const navWrapper = document.querySelector('.nav-buttons');
+	if (navWrapper) {
+		navWrapper.style.display = 'flex';
+	}
+}
+
 // Add onclick for my buttons
 feelgoodFilter.onclick = () => {
 	kdramalBlocks.classList.add('show-feelGood')
-    kdramalBlocks.classList.remove('show-uglyCry', 'show-thriller','show-romantic')
+	showNavButtons();
+    kdramalBlocks.classList.remove('show-uglyCry', 'show-thriller','show-romantic', 'show-mysterious','show-nostalgic' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
 };
 
 uglycryFilter.onclick = () => {
-    kdramalBlocks.classList.add('show-blue', )
-    kdramalBlocks.classList.remove('show-feelGood', 'show-thriller', 'show-romantic' )
+    kdramalBlocks.classList.add('show-uglyCry', )
+    kdramalBlocks.classList.remove('show-feelGood', 'show-thriller', 'show-romantic','show-mysterious','show-nostalgic' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
 }
@@ -169,42 +154,42 @@ uglycryFilter.onclick = () => {
 thrillerFilter.onclick = () => {
     console.log("thriller")
     kdramalBlocks.classList.add('show-thriller')
-    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-romantic' )
+    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-romantic','show-mysterious','show-nostalgic' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
 }
 
 romanticFilter.onclick = () => {
     kdramalBlocks.classList.add('show-romantic')
-    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller' )
+    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller','show-mysterious','show-nostalgic' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
 }
 
 mysteriousFilter.onclick = () => {
     kdramalBlocks.classList.add('show-mysterious')
-    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller' )
+    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller','show-romantic','show-nostalgic' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
 }
 
 nostalgicFilter.onclick = () => {
     kdramalBlocks.classList.add('show-nostalgic')
-    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller' )
+    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller','show-mysterious' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
 }
 
 cheesyFilter.onclick = () => {
     kdramalBlocks.classList.add('show-cheesy')
-    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller' )
+    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller','show-mysterious','show-nostalgic' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
 }
 
 spontaneousFilter.onclick = () => {
     kdramalBlocks.classList.add('show-spontaneous')
-    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller' )
+    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller','show-mysterious','show-nostalgic' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
 }
