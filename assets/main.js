@@ -89,7 +89,7 @@ const renderItems = (data) => {
 		// Creating Previous Button
 		const prevBtn = document.createElement('button');
 		prevBtn.id = 'prevBtn'
-		prevBtn.textContent = 'Previous Movie';
+		prevBtn.innerHTML = '<img src="assets/prevBtn.png" alt="Previous" />';
 		prevBtn.style.display = 'none'; //initially hidden
 	
 		// Creating Next Button
