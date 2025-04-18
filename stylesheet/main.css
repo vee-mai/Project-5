@@ -106,11 +106,20 @@ aside{
     text-align: center;
 }
 
+.filter-button:hover .feel-good-filter{
+    display:none;
+}
+
+.filter-button:hover .feel-good-hover{
+    display:block;
+}
+
 /* all vibes filter button */
 .feel-good-filter{
     display: block;
     width:var(--filter-size);
     height:var(--filter-size);
+    transition: opacity 0.3s ease;
 }
 
 .ugly-cry-filter{
@@ -418,6 +427,14 @@ ul{
     display: block;
     width:var(--filter-sizeL);
     height:var(--filter-sizeL);
+}
+
+.feel-good-hover{
+    display:none;
+    width:var(--filter-sizeL);
+    height:var(--filter-sizeL);
+    transition: opacity 0.3s ease;
+    cursor:pointer;
 }
 
 .ugly-cry-filter{
