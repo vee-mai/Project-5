@@ -146,6 +146,9 @@ function updateBackground(vibe) {
     container.classList.add(`bg-${vibe.toLowerCase()}`);
 }
 
+// hiding the .card-footer untill a filter button is clicked
+document.querySelector('.card-footer').style.display = 'flex';
+
 // Add onclick for my buttons
 feelgoodFilter.onclick = () => {
 	kdramalBlocks.classList.add('show-feelGood',)
@@ -153,6 +156,8 @@ feelgoodFilter.onclick = () => {
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	updateBackground('feelgood');
 	showNavButtons();
+
+	document.querySelector('.card-footer').style.display = 'flex'; // show card-footer
 };
 
 uglycryFilter.onclick = () => {

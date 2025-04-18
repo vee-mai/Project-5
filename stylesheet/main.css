@@ -388,7 +388,7 @@ ul {
 }
 
 .card-footer{
-    display:flex;
+    display:none;
     justify-content:space-between;
     align-items:center;
     margin-top:var(--s-padding);
@@ -396,6 +396,7 @@ ul {
     /* margin:auto; */
     bottom:0;
     /* border-top:1px solid #ccc; */
+    display:none;
 }
 
 .vibes-title{
@@ -547,5 +548,9 @@ ul{
     display: block;
     width:var(--filter-sizeL);
     height:var(--filter-sizeL);
+}
+
+.card-footer{
+    display:none;
 }
 }
