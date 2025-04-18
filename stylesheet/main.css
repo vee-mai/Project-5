@@ -114,6 +114,14 @@ aside{
     display:block;
 }
 
+.filter-button:hover .mysterious-filter{
+    display:none;
+}
+
+.filter-button:hover .mysterious-hover{
+    display:block;
+}
+
 /* all vibes filter button */
 .feel-good-filter{
     display: block;
@@ -147,6 +155,10 @@ aside{
     display: block;
     width:var(--filter-size);
     height:var(--filter-size);
+}
+
+.mysterious-hover{
+    display:none;
 }
 
 .nostalgic-filter{
@@ -462,6 +474,14 @@ ul{
     display: block;
     width:var(--filter-sizeL);
     height:var(--filter-sizeL);
+}
+
+.mysterious-hover{
+    display:none;
+    width:var(--filter-sizeL);
+    height:var(--filter-sizeL);
+    transition: opacity 0.3s ease;
+    cursor:pointer;
 }
 
 .nostalgic-filter{
