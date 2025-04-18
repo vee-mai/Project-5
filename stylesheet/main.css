@@ -121,6 +121,9 @@ aside{
     height:var(--filter-size);
     transition: opacity 0.3s ease;
 }
+.feel-good-hover{
+    display:none;
+}
 
 .ugly-cry-filter{
     display: block;
