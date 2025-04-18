@@ -15,6 +15,7 @@
     --text-color:#6b768f;
     --bg-color:#f9f7ef;
     --filter-size:8rem;
+    --filter-sizeL:12rem;
 
     /* Sizes */
     --spacing:1rem;
@@ -397,15 +398,67 @@ ul{
 .bttn-items{
     display:flex;
     flex-direction:row;
+    gap:inherit;
 }
 
 .filter-container{
-    justify-content:center;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
     gap:20px;
 }
 
 /* my data.json section*/
 .data-container{
     height:100vh;
+}
+
+/* all vibes filter button */
+.feel-good-filter{
+    display: block;
+    width:var(--filter-sizeL);
+    height:var(--filter-sizeL);
+}
+
+.ugly-cry-filter{
+    display: block;
+    width:var(--filter-sizeL);
+    height:var(--filter-sizeL);
+}
+
+.thriller-filter{
+    display: block;
+    width:var(--filter-sizeL);
+    height:var(--filter-sizeL);
+}
+
+.romantic-filter{
+    display: block;
+    width:var(--filter-sizeL);
+    height:var(--filter-sizeL);
+}
+
+.mysterious-filter{
+    display: block;
+    width:var(--filter-sizeL);
+    height:var(--filter-sizeL);
+}
+
+.nostalgic-filter{
+    display: block;
+    width:var(--filter-sizeL);
+    height:var(--filter-sizeL);
+}
+
+.cheesy-filter{
+    display: block;
+    width:var(--filter-sizeL);
+    height:var(--filter-sizeL);
+}
+
+.spontaneous-filter{
+    display: block;
+    width:var(--filter-sizeL);
+    height:var(--filter-sizeL);
 }
 }
