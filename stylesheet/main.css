@@ -115,6 +115,15 @@ aside{
     display:block;
 }
 
+/* ugly-cry filter */
+.filter-button:hover .ugly-cry-filter{
+    display:none;
+}
+
+.filter-button:hover .ugly-cry-hover{
+    display:block;
+}
+
 /* mysterious filter */
 .filter-button:hover .mysterious-filter{
     display:none;
@@ -155,6 +164,12 @@ aside{
 
 .ugly-cry-filter{
     display: block;
+    width:var(--filter-size);
+    height:var(--filter-size);
+}
+
+.ugly-cry-hover{
+    display:none;
     width:var(--filter-size);
     height:var(--filter-size);
 }
@@ -489,6 +504,14 @@ ul{
     display: block;
     width:var(--filter-sizeL);
     height:var(--filter-sizeL);
+}
+
+.ugly-cry-hover{
+    display:none;
+    width:var(--filter-sizeL);
+    height:var(--filter-sizeL);
+    transition: opacity 0.3s ease;
+    cursor:pointer;
 }
 
 .thriller-filter{
