@@ -106,6 +106,7 @@ aside{
     text-align: center;
 }
 
+/* feel-good filter */
 .filter-button:hover .feel-good-filter{
     display:none;
 }
@@ -114,11 +115,30 @@ aside{
     display:block;
 }
 
+/* mysterious filter */
 .filter-button:hover .mysterious-filter{
     display:none;
 }
 
 .filter-button:hover .mysterious-hover{
+    display:block;
+}
+
+/* thriller filter */
+.filter-button:hover .thriller-filter{
+    display:none;
+}
+
+.filter-button:hover .thriller-hover{
+    display:block;
+}
+
+/* nostalgic filter */
+.filter-button:hover .nostalgic-filter{
+    display:none;
+}
+
+.filter-button:hover .nostalgic-hover{
     display:block;
 }
 
@@ -145,6 +165,10 @@ aside{
     height:var(--filter-size);
 }
 
+.thriller-hover{
+    display:none;
+}
+
 .romantic-filter{
     display: block;
     width:var(--filter-size);
@@ -165,6 +189,10 @@ aside{
     display: block;
     width:var(--filter-size);
     height:var(--filter-size);
+}
+
+.thriller-hover{
+    display:none;
 }
 
 .cheesy-filter{
@@ -464,6 +492,14 @@ ul{
     height:var(--filter-sizeL);
 }
 
+.thriller-hover{
+    display:none;
+    width:var(--filter-sizeL);
+    height:var(--filter-sizeL);
+    transition: opacity 0.3s ease;
+    cursor:pointer;
+}
+
 .romantic-filter{
     display: block;
     width:var(--filter-sizeL);
@@ -490,6 +526,13 @@ ul{
     height:var(--filter-sizeL);
 }
 
+.nostalgic-hover{
+    display:none;
+    width:var(--filter-sizeL);
+    height:var(--filter-sizeL);
+    transition: opacity 0.3s ease;
+    cursor:pointer;
+}
 .cheesy-filter{
     display: block;
     width:var(--filter-sizeL);
