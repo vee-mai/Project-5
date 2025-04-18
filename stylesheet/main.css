@@ -191,6 +191,10 @@ aside{
     height:var(--filter-size);
 }
 
+.nostalgic-hover{
+    display:none;
+}
+
 .thriller-hover{
     display:none;
 }
