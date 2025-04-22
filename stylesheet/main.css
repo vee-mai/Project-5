@@ -283,11 +283,12 @@ img{
 
 .poster{
     width:var(--poster-size);
-    height:auto;
+    height:28rem;
     display:block;
     object-fit:cover;
     margin:auto;
     border-radius:var(--s-padding);
+    overflow:hidden;
 }
 
 ul {
@@ -405,11 +406,10 @@ ul {
 #data-list{
     display:flex;
     flex-direction:row;
-    gap:1rem;
     overflow-x:hidden; 
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
 }
 
 #data-list li{
@@ -450,10 +450,9 @@ ul {
     align-items:center;
     margin-top:var(--s-padding);
     padding:0.5rem;
-    /* margin:auto; */
     bottom:0;
-    /* border-top:1px solid #ccc; */
     display:none;
+    justify-content: flex-end;
 }
 
 .vibes-title{
@@ -473,11 +472,12 @@ ul {
 
 .mapVibe{
     font-family:var(--main-typeface);
-    font-size:28px;
-    padding-top:1.5rem;
+    font-size:var(--h1);
+    padding-top:1rem;
     padding-left:0.2rem;
     padding-bottom:0.4rem;
     color:var(--text-color);
+    justify-items:center;
 }
 
 .back-to-top{
