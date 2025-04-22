@@ -26,6 +26,7 @@
     --urlIcon:1.5rem;
     --s-padding:0.5rem;
     --poster-size:20rem;
+    --poster-size-mobile:18.5rem;
 }
 
 h1{
@@ -296,7 +297,7 @@ img{
 }
 
 .poster{
-    width:var(--poster-size);
+    width:var( --poster-size-mobile);
     height:28rem;
     display:block;
     object-fit:cover;
@@ -478,6 +479,7 @@ ul {
 .movieCard{
     background-color:var(--bg-color);
     padding-top:1.5rem;
+    padding:1rem;
     max-width:22rem;
     margin:auto;
     border-radius:0.4rem;
@@ -530,6 +532,10 @@ ul{
 }
 
 @media (min-width:1280px){
+
+.poster{
+    width:var(--poster-size);
+}
 
 .mobile-title{
     display:none;
@@ -704,5 +710,4 @@ h4{
     border-radius:0.4rem;
     justify-content: center;
 }
-
 }
