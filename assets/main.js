@@ -171,9 +171,9 @@ feelgoodFilter.onclick = () => {
     kdramalBlocks.classList.remove('show-uglyCry', 'show-thriller','show-romantic', 'show-mysterious','show-nostalgic', 'show-cheesy', 'show-spontaneous')
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	updateBackground('feelgood');
-	showCardFooter(); // shows footer *only after* a filter is clicked
 	showNavButtons();
 	showDataContainer(); 
+	showCardFooter(); // shows footer *only after* a filter is clicked
 
 	document.querySelector('.card-footer').style.display = 'flex'; // show card-footer
 };
@@ -184,7 +184,8 @@ uglycryFilter.onclick = () => {
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	updateBackground('uglycry');
 	showNavButtons();
-	showDataContainer(); 
+	showDataContainer();
+	showCardFooter();  
 }
 
 thrillerFilter.onclick = () => {
@@ -194,6 +195,7 @@ thrillerFilter.onclick = () => {
 	updateBackground('thriller');
 	showNavButtons();
 	showDataContainer(); 
+	showCardFooter(); 
 }
 
 romanticFilter.onclick = () => {
@@ -203,6 +205,7 @@ romanticFilter.onclick = () => {
 	showNavButtons();
 	updateBackground('romantic');
 	showDataContainer(); 
+	showCardFooter(); 
 }
 
 mysteriousFilter.onclick = () => {
@@ -212,6 +215,7 @@ mysteriousFilter.onclick = () => {
 	showNavButtons();
 	updateBackground('mysterious');
 	showDataContainer(); 
+	showCardFooter(); 
 }
 
 nostalgicFilter.onclick = () => {
@@ -221,6 +225,7 @@ nostalgicFilter.onclick = () => {
 	showNavButtons();
 	updateBackground('nostalgic');
 	showDataContainer(); 
+	showCardFooter(); 
 }
 
 cheesyFilter.onclick = () => {
@@ -230,6 +235,7 @@ cheesyFilter.onclick = () => {
 	showNavButtons();
 	updateBackground('cheesy');
 	showDataContainer(); 
+	showCardFooter(); 
 }
 
 spontaneousFilter.onclick = () => {
@@ -239,6 +245,7 @@ spontaneousFilter.onclick = () => {
 	showNavButtons();
 	updateBackground('spontaneous');
 	showDataContainer(); 
+	showCardFooter(); 
 }
 
 // Creating horizontal scroll by one card at a time
