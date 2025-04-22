@@ -550,6 +550,7 @@ h4{
 
 /* my data.json section*/
 .data-container{
+    display:hidden;
     height:100vh;
 }
 
