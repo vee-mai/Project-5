@@ -83,7 +83,7 @@ aside{
 
 /* aside class */
 .header{
-    padding-top:calc(var(--s-padding) * 4);
+    padding-top:calc(var(--s-padding) * 6);
     padding-left:calc(var(--s-padding) * 3);
     padding-bottom:0rem;
 }
@@ -194,6 +194,8 @@ aside{
 }
 .feel-good-hover{
     display:none;
+    width:var(--filter-size);
+    height:var(--filter-size);
 }
 
 .ugly-cry-filter{
@@ -216,6 +218,8 @@ aside{
 
 .thriller-hover{
     display:none;
+    width:var(--filter-size);
+    height:var(--filter-size);
 }
 
 .romantic-filter{
@@ -226,6 +230,8 @@ aside{
 
 .romantic-hover{
     display:none;
+    width:var(--filter-size);
+    height:var(--filter-size);
 }
 
 .mysterious-filter{
@@ -236,6 +242,8 @@ aside{
 
 .mysterious-hover{
     display:none;
+    width:var(--filter-size);
+    height:var(--filter-size);
 }
 
 .nostalgic-filter{
@@ -246,6 +254,8 @@ aside{
 
 .nostalgic-hover{
     display:none;
+    width:var(--filter-size);
+    height:var(--filter-size);
 }
 
 .cheesy-filter{
@@ -256,6 +266,8 @@ aside{
 
 .cheesy-hover{
     display:none;
+    width:var(--filter-size);
+    height:var(--filter-size);
 }
 
 .spontaneous-filter{
@@ -266,6 +278,8 @@ aside{
 
 .spontaneous-hover{
     display:none;
+    width:var(--filter-size);
+    height:var(--filter-size);
 }
 
 
@@ -508,10 +522,23 @@ ul{
 
 .top-wrapper{
     height:100vh;
-    overflow:hidden;
+    overflow:auto;
+}
+
+.desktop-title{
+    display:none;
 }
 
 @media (min-width:1280px){
+
+.mobile-title{
+    display:none;
+}
+
+.desktop-title{
+    display:block;
+}
+
 h1{
     font-family: var(--main-typeface);
     font-size:var(--h1-L);
@@ -524,7 +551,7 @@ h2{
     font-size:var(--h2-L);
     font-weight:500;
     color:var(--secondary-text-color);
-    padding-top:1rem;
+    padding: 0rem 0rem 2.7rem 1.5rem;
 }
 
 h4{
