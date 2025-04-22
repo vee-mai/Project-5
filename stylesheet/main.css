@@ -1,25 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 :root {
     /* Typefaces related */
     --main-typeface:"Jua", sans-serif;
-    --secondary-typeface:"National Park", sans-serif;
+    --secondary-typeface:"Quicksand", sans-serif;
     --h1:38px;
+    --h1-L:48px;
     --h2:18px;
+    --h2-L:24px;
     --h3:16px;
+    --h4:24px;
     --p:24px;
     --h1-weight:400;
     --h2-weight:600;
 
     /* Color */
-    --text-color:#6b768f;
+    --text-color:#2d313d;
+    --secondary-text-color:#636060;
     --bg-color:#f9f7ef;
     --filter-size:8rem;
     --filter-sizeL:12rem;
 
     /* Sizes */
     --spacing:1rem;
-    --urlIcon:2rem;
+    --urlIcon:1.5rem;
     --s-padding:0.5rem;
     --poster-size:20rem;
 }
@@ -28,6 +32,7 @@ h1{
     font-family: var(--main-typeface);
     font-size:var(--h1);
     font-weight:var( --h1-weight);
+    line-height:2.6rem;
     color:var(--text-color);
     padding-bottom:-5px;
 }
@@ -36,7 +41,8 @@ h2{
     font-family:var(--secondary-typeface);
     font-size:var(--h2);
     font-weight:var(--h1-weight);
-    color:var(--text-color);
+    color:var(--secondary-text-color);
+    padding-top:0.5rem;
 }
 
 h3{
@@ -50,6 +56,7 @@ h3{
 h4{
     font-family:var(--secondary-typeface);
     font-size:var(--h3);
+    font-weight:var(--h2-weight);
     color:var(--text-color);
     padding-bottom:calc(var(--s-padding) * 2);
     text-align: center;
@@ -124,6 +131,15 @@ aside{
     display:block;
 }
 
+/* thriller filter */
+.filter-button:hover .romantic-filter{
+    display:none;
+}
+
+.filter-button:hover .romantic-hover{
+    display:block;
+}
+
 /* mysterious filter */
 .filter-button:hover .mysterious-filter{
     display:none;
@@ -148,6 +164,24 @@ aside{
 }
 
 .filter-button:hover .nostalgic-hover{
+    display:block;
+}
+
+/* cheesy-filter */
+.filter-button:hover .cheesy-filter{
+    display:none;
+}
+
+.filter-button:hover .cheesy-hover{
+    display:block;
+}
+
+/* spontaneous-filter */
+.filter-button:hover .spontaneous-filter{
+    display:none;
+}
+
+.filter-button:hover .spontaneous-hover{
     display:block;
 }
 
@@ -190,6 +224,10 @@ aside{
     height:var(--filter-size);
 }
 
+.romantic-hover{
+    display:none;
+}
+
 .mysterious-filter{
     display: block;
     width:var(--filter-size);
@@ -210,20 +248,24 @@ aside{
     display:none;
 }
 
-.thriller-hover{
-    display:none;
-}
-
 .cheesy-filter{
     display: block;
     width:var(--filter-size);
     height:var(--filter-size);
 }
 
+.cheesy-hover{
+    display:none;
+}
+
 .spontaneous-filter{
     display: block;
     width:var(--filter-size);
     height:var(--filter-size);
+}
+
+.spontaneous-hover{
+    display:none;
 }
 
 
@@ -465,6 +507,24 @@ ul{
 }
 
 @media (min-width:1280px){
+h1{
+    font-family: var(--main-typeface);
+    font-size:var(--h1-L);
+    font-weight:var( --h1-weight);
+    line-height:3.2rem;
+}
+    
+h2{
+    font-family:var(--secondary-typeface);
+    font-size:var(--h2-L);
+    font-weight:500;
+    color:var(--secondary-text-color);
+    padding-top:1rem;
+}
+
+h4{
+    font-size:var(--h3);
+}
 
 /* filter buttons container */
 .bttn-items{
@@ -478,6 +538,8 @@ ul{
     flex-direction:column;
     align-items: center;
     gap:20px;
+    /* height:100vh; */
+    justify-content:center;
 }
 
 /* my data.json section*/
@@ -534,6 +596,14 @@ ul{
     height:var(--filter-sizeL);
 }
 
+.romantic-hover{
+    display:none;
+    width:var(--filter-sizeL);
+    height:var(--filter-sizeL);
+    transition: opacity 0.3s ease;
+    cursor:pointer;
+}
+
 .mysterious-filter{
     display: block;
     width:var(--filter-sizeL);
@@ -567,10 +637,26 @@ ul{
     height:var(--filter-sizeL);
 }
 
+.cheesy-hover{
+    display:none;
+    width:var(--filter-sizeL);
+    height:var(--filter-sizeL);
+    transition: opacity 0.3s ease;
+    cursor:pointer;
+}
+
 .spontaneous-filter{
     display: block;
     width:var(--filter-sizeL);
     height:var(--filter-sizeL);
+}
+
+.spontaneous-hover{
+    display:none;
+    width:var(--filter-sizeL);
+    height:var(--filter-sizeL);
+    transition: opacity 0.3s ease;
+    cursor:pointer;
 }
 
 .card-footer{

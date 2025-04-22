@@ -35,7 +35,7 @@ const renderItems = (data) => {
 	data.forEach((item) => {
 		let KdramaCard = '' // Set an empty class variable
 		
-		let iconUrl = '/assets/netflix.png'
+		let iconUrl = './assets/netflix.png'
         
 		// Conditional if this is `false` (“not true”)
 		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
@@ -152,7 +152,7 @@ document.querySelector('.card-footer').style.display = 'flex';
 // Add onclick for my buttons
 feelgoodFilter.onclick = () => {
 	kdramalBlocks.classList.add('show-feelGood',)
-    kdramalBlocks.classList.remove('show-uglyCry', 'show-thriller','show-romantic', 'show-mysterious','show-nostalgic' )
+    kdramalBlocks.classList.remove('show-uglyCry', 'show-thriller','show-romantic', 'show-mysterious','show-nostalgic', 'show-cheesy', 'show-spontaneous')
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	updateBackground('feelgood');
 	showNavButtons();
@@ -162,7 +162,7 @@ feelgoodFilter.onclick = () => {
 
 uglycryFilter.onclick = () => {
     kdramalBlocks.classList.add('show-uglyCry', )
-    kdramalBlocks.classList.remove('show-feelGood', 'show-thriller', 'show-romantic','show-mysterious','show-nostalgic' )
+    kdramalBlocks.classList.remove('show-feelGood', 'show-thriller', 'show-romantic','show-mysterious','show-nostalgic','show-cheesy', 'show-spontaneous')
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	updateBackground('uglycry');
 	showNavButtons();
@@ -170,7 +170,7 @@ uglycryFilter.onclick = () => {
 
 thrillerFilter.onclick = () => {
     kdramalBlocks.classList.add('show-thriller')
-    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-romantic','show-mysterious','show-nostalgic' )
+    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-romantic','show-mysterious','show-nostalgic','show-cheesy', 'show-spontaneous')
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	updateBackground('thriller');
 	showNavButtons();
@@ -178,7 +178,7 @@ thrillerFilter.onclick = () => {
 
 romanticFilter.onclick = () => {
     kdramalBlocks.classList.add('show-romantic')
-    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller','show-mysterious','show-nostalgic' )
+    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller','show-mysterious','show-nostalgic','show-cheesy', 'show-spontaneous' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
 	updateBackground('romantic');
@@ -186,7 +186,7 @@ romanticFilter.onclick = () => {
 
 mysteriousFilter.onclick = () => {
     kdramalBlocks.classList.add('show-mysterious')
-    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller','show-romantic','show-nostalgic' )
+    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller','show-romantic','show-nostalgic','show-cheesy', 'show-spontaneous')
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
 	updateBackground('mysterious');
@@ -194,7 +194,7 @@ mysteriousFilter.onclick = () => {
 
 nostalgicFilter.onclick = () => {
     kdramalBlocks.classList.add('show-nostalgic')
-    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller','show-mysterious' )
+    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller','show-romantic','show-mysterious','show-cheesy', 'show-spontaneous' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
 	updateBackground('nostalgic');
@@ -202,7 +202,7 @@ nostalgicFilter.onclick = () => {
 
 cheesyFilter.onclick = () => {
     kdramalBlocks.classList.add('show-cheesy')
-    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller','show-mysterious','show-nostalgic' )
+    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller','show-mysterious', 'show-romantic','show-nostalgic','show-spontaneous' )
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
 	updateBackground('cheesy');
@@ -210,7 +210,7 @@ cheesyFilter.onclick = () => {
 
 spontaneousFilter.onclick = () => {
     kdramalBlocks.classList.add('show-spontaneous')
-    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller','show-mysterious','show-nostalgic' )
+    kdramalBlocks.classList.remove('show-feelGood', 'show-uglyCry', 'show-thriller','show-mysterious','show-nostalgic', 'show-romantic','show-cheesy')
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
 	updateBackground('spontaneous');

@@ -5,16 +5,15 @@
       "Poster": "https://upload.wikimedia.org/wikipedia/en/1/19/A_Business_Proposal.jpg",
       "Vibes": "feelGood",
       "Where": "netflix",
-      "url":"https://www.netflix.com/title/81509440",
-      "tags": {
-        "Must-watch": "false",
-        "Rom-com": "true",
-        "Supernatural": "false",
-        "Heartfelt":"true",
-        "Historical":"false",
-        "Emotional":"false",
-        "light":"true"
-    }
+      "url":"https://www.netflix.com/title/81509440"
+    },
+    {
+      "Title": "When Life Gives You Tangerines",
+      "Year": 2025,
+      "Poster": "https://upload.wikimedia.org/wikipedia/en/e/e8/When_Life_Gives_You_Tangerines_poster.png",
+      "Vibes": "uglyCry",
+      "Where": "netflix",
+      "url":"https://www.netflix.com/title/81509440"
     },
     {
       "Title": "Twinkling Watermelon",
