@@ -397,7 +397,7 @@ ul {
     left:var(--urlIcon);
     padding:var(--s-padding);
     height:100vh;
-    display:flex;
+    display:none;
     flex-direction:column;
 }
 
@@ -467,8 +467,9 @@ ul {
     padding-top:1.5rem;
     max-width:22rem;
     margin:auto;
-    border-radius:0.5rem;
+    border-radius:0.4rem;
     justify-content: center;
+    height:100%;
 }
 
 .mapVibe{
@@ -504,6 +505,11 @@ ul{
     align-items:center;
     padding:var(--s-padding);
     color:var(--text-color);
+}
+
+.top-wrapper{
+    height:100vh;
+    overflow:hidden;
 }
 
 @media (min-width:1280px){
@@ -662,4 +668,14 @@ h4{
 .card-footer{
     display:none;
 }
+
+.movieCard{
+    background-color:var(--bg-color);
+    padding-top:1.5rem;
+    max-width:23rem;
+    margin:auto;
+    border-radius:0.4rem;
+    justify-content: center;
+}
+
 }

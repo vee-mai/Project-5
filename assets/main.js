@@ -76,7 +76,9 @@ const renderItems = (data) => {
 
 	function scrollToTop(event) {
 		event.preventDefault();
-		window.scrollTo({ top:0, behaviour:'smooth'});
+
+		const topSection = document.querySelector('.top-wrapper');
+		topSection.scrollIntoView({ behavior: 'smooth' });
 	}
 
 // Fetch gets your (local) JSON file…
@@ -147,7 +149,21 @@ function updateBackground(vibe) {
 }
 
 // hiding the .card-footer untill a filter button is clicked
-document.querySelector('.card-footer').style.display = 'flex';
+// document.querySelector('.card-footer').style.display = 'flex';
+function showCardFooter() {
+	const footer = document.querySelector('.card-footer');
+	if (footer) {
+		footer.style.display = 'flex';
+	}
+}
+
+// hide and show after
+function showDataContainer() {
+	const container = document.querySelector('.data-container');
+	if (container) {
+		container.style.display = 'flex';
+	}
+}
 
 // Add onclick for my buttons
 feelgoodFilter.onclick = () => {
@@ -155,7 +171,9 @@ feelgoodFilter.onclick = () => {
     kdramalBlocks.classList.remove('show-uglyCry', 'show-thriller','show-romantic', 'show-mysterious','show-nostalgic', 'show-cheesy', 'show-spontaneous')
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	updateBackground('feelgood');
+	showCardFooter(); // shows footer *only after* a filter is clicked
 	showNavButtons();
+	showDataContainer(); 
 
 	document.querySelector('.card-footer').style.display = 'flex'; // show card-footer
 };
@@ -166,6 +184,7 @@ uglycryFilter.onclick = () => {
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	updateBackground('uglycry');
 	showNavButtons();
+	showDataContainer(); 
 }
 
 thrillerFilter.onclick = () => {
@@ -174,6 +193,7 @@ thrillerFilter.onclick = () => {
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	updateBackground('thriller');
 	showNavButtons();
+	showDataContainer(); 
 }
 
 romanticFilter.onclick = () => {
@@ -182,6 +202,7 @@ romanticFilter.onclick = () => {
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
 	updateBackground('romantic');
+	showDataContainer(); 
 }
 
 mysteriousFilter.onclick = () => {
@@ -190,6 +211,7 @@ mysteriousFilter.onclick = () => {
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
 	updateBackground('mysterious');
+	showDataContainer(); 
 }
 
 nostalgicFilter.onclick = () => {
@@ -198,6 +220,7 @@ nostalgicFilter.onclick = () => {
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
 	updateBackground('nostalgic');
+	showDataContainer(); 
 }
 
 cheesyFilter.onclick = () => {
@@ -206,6 +229,7 @@ cheesyFilter.onclick = () => {
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
 	updateBackground('cheesy');
+	showDataContainer(); 
 }
 
 spontaneousFilter.onclick = () => {
@@ -214,6 +238,7 @@ spontaneousFilter.onclick = () => {
 	kdramalBlocks.scrollIntoView({behavior: 'smooth'})
 	showNavButtons();
 	updateBackground('spontaneous');
+	showDataContainer(); 
 }
 
 // Creating horizontal scroll by one card at a time

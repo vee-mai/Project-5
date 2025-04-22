@@ -10,60 +10,62 @@
 		<script defer src="assets/main.js"></script>
 	</head>
 	<body>
-        <aside class="header">
-            <div h1>
-                <h1 class="welcome-text">"Mai" Picks,</h1>
-                <h1> Based on Your Vibes</h1>
+        <div class="top-wrapper">
+            <aside class="header">
+                <div>
+                    <h1 class="welcome-text">"Mai" Picks,</h1>
+                    <h1> Based on Your Vibes</h1>
+                </div>
+                <h2 class="title">What’s your vibe? I’ll match it</h1>
+            </aside>
+      
+            <section class="filter-container">
+                    <div class="bttn-items">
+                        <button class="filter-button" id="feelGood-filter">
+                            <img class="feel-good-filter" src="assets/feel-good.png"></img>
+                            <img class="feel-good-hover" src="assets/feel-good-hover.png"></img>
+                            <h3 class="vibes-title">Feel Good</h3>
+                        </button>
+                        <button class="filter-button" id="uglyCry-filter">
+                            <img class="ugly-cry-filter" src="assets/ugly-cry.png"></img>
+                            <img class="ugly-cry-hover" src="assets/ugly-cry-hover.png"></img>
+                            <h3 class="vibes-title">Ugly Cry</h3>
+                        </button> 
+                        <button class="filter-button" id="thriller-filter">
+                            <img class="thriller-filter" src="assets/thriller.png"></img>
+                            <img class="thriller-hover" src="assets/thriller-hover.png"></img>
+                            <h3 class="vibes-title">Thriller</h3>
+                        </button> 
+                        <button class="filter-button" id="romantic-filter">
+                            <img class="romantic-filter" src="assets/romantic.png"></img>
+                            <img class="romantic-hover" src="assets/romantic-hover.png"></img>
+                            <h3 class="vibes-title">Romantic</h3>
+                        </button> 
+                    </div>
+                    <div class="bttn-items">
+                        <button class="filter-button" id="mysterious-filter">
+                            <img class="mysterious-filter" src="assets/mysterious.png"></img>
+                            <img class="mysterious-hover" src="assets/mysterious-hover.png"></img>
+                            <h3 class="vibes-title">Mysterious</h3>
+                        </button>
+                        <button class="filter-button" id="nostalgic-filter">
+                            <img class="nostalgic-filter" src="assets/nostalgic.png"></img>
+                            <img class="nostalgic-hover" src="assets/nostalgic-hover.png"></img>
+                            <h3 class="vibes-title">Nostalgic</h3>
+                        </button> 
+                        <button class="filter-button" id="cheesy-filter">
+                            <img class="cheesy-filter" src="assets/cheesy.png"></img>
+                            <img class="cheesy-hover" src="assets/cheesy-hover.png"></img>
+                            <h3 class="vibes-title">Cheesy</h3>
+                        </button> 
+                        <button class="filter-button" id="spontaneous-filter">
+                            <img class="spontaneous-filter" src="assets/neutral.png"></img>
+                            <img class="spontaneous-hover" src="assets/spontaneous-hover.png"></img>
+                            <h3 class="vibes-title">Spontaneous</h3>
+                        </button> 
+                    </div>
+            </section>
             </div>
-            <h2 class="title">What’s your vibe? I’ll match it</h1>
-        </aside>
-
-        <section class="filter-container">
-                <div class="bttn-items">
-                    <button class="filter-button" id="feelGood-filter">
-                        <img class="feel-good-filter" src="assets/feel-good.png"></img>
-                        <img class="feel-good-hover" src="assets/feel-good-hover.png"></img>
-                        <h3 class="vibes-title">Feel Good</h3>
-                    </button>
-                    <button class="filter-button" id="uglyCry-filter">
-                        <img class="ugly-cry-filter" src="assets/ugly-cry.png"></img>
-                        <img class="ugly-cry-hover" src="assets/ugly-cry-hover.png"></img>
-                        <h3 class="vibes-title">Ugly Cry</h3>
-                    </button> 
-                    <button class="filter-button" id="thriller-filter">
-                        <img class="thriller-filter" src="assets/thriller.png"></img>
-                        <img class="thriller-hover" src="assets/thriller-hover.png"></img>
-                        <h3 class="vibes-title">Thriller</h3>
-                    </button> 
-                    <button class="filter-button" id="romantic-filter">
-                        <img class="romantic-filter" src="assets/romantic.png"></img>
-                        <img class="romantic-hover" src="assets/romantic-hover.png"></img>
-                        <h3 class="vibes-title">Romantic</h3>
-                    </button> 
-                </div>
-                <div class="bttn-items">
-                    <button class="filter-button" id="mysterious-filter">
-                        <img class="mysterious-filter" src="assets/mysterious.png"></img>
-                        <img class="mysterious-hover" src="assets/mysterious-hover.png"></img>
-                        <h3 class="vibes-title">Mysterious</h3>
-                    </button>
-                    <button class="filter-button" id="nostalgic-filter">
-                        <img class="nostalgic-filter" src="assets/nostalgic.png"></img>
-                        <img class="nostalgic-hover" src="assets/nostalgic-hover.png"></img>
-                        <h3 class="vibes-title">Nostalgic</h3>
-                    </button> 
-                    <button class="filter-button" id="cheesy-filter">
-                        <img class="cheesy-filter" src="assets/cheesy.png"></img>
-                        <img class="cheesy-hover" src="assets/cheesy-hover.png"></img>
-                        <h3 class="vibes-title">Cheesy</h3>
-                    </button> 
-                    <button class="filter-button" id="spontaneous-filter">
-                        <img class="spontaneous-filter" src="assets/neutral.png"></img>
-                        <img class="spontaneous-hover" src="assets/spontaneous-hover.png"></img>
-                        <h3 class="vibes-title">Spontaneous</h3>
-                    </button> 
-                </div>
-        </section>
 
         <section class="data-container">
             <ul id="data-list"></ul>
