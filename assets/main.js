@@ -58,8 +58,8 @@ const renderItems = (data) => {
 					<p class="mapVibe">${mapVibe(item.Vibes)}</p>
 				</div>
 				<div class="movieCard">
-					<h4> ${item.Title}</h4>
 					<img class="poster" src="${item.Poster}">
+					<h4> ${item.Title}</h4>
 					<div class="watchWhere"
 						<p>Available on ${item.Where}</p>
 						<img class="streamIcon" src="${iconUrl}">
