@@ -1,6 +1,6 @@
-// Helper function to map Vibes values to titles
-// Coding assistant from Coding Tutor 
-// Declaring a function named mapVibe
+// Create a function to map Vibes values to titles
+// Coding assistant from Jonathan
+// Declaring a function named mapVibe then convert it to readable format
 function mapVibe(vibe) {
     switch(vibe) {
         case "feelGood":
@@ -43,10 +43,11 @@ const renderItems = (data) => {
 			KdramaCard = 'kdramaCard' // Update the variable
 		}
 		
+		//Changes the iconUrl based on which streaming platform the drama is available on
 		if (item.Where==='hulu'){
-			iconUrl='/assets/hulu.png'
+			iconUrl='./assets/hulu.png'
 		} else if (item.Where === 'viki') {
-			iconUrl = 'assets/viki.png'
+			iconUrl = './assets/viki.png'
 		}
 
 		// Make a “template literal” as we have before, inserting your data (and maybe the class)
@@ -62,7 +63,9 @@ const renderItems = (data) => {
 					<h4> ${item.Title}</h4>
 					<div class="watchWhere"
 						<p>Available on ${item.Where}</p>
-						<img class="streamIcon" src="${iconUrl}">
+						<a href="${item.url}" target="_blank">
+							<img class="streamIcon" src="${iconUrl}">
+						</a>
 					</div>
 				</div>
 			</li>
@@ -74,17 +77,20 @@ const renderItems = (data) => {
 	})
 }
 
+	//define new function named scrollToTop
 	function scrollToTop(event) {
 		event.preventDefault();
 
+		//find the .top-wrapper section
 		const topSection = document.querySelector('.top-wrapper');
 		topSection.scrollIntoView({ behavior: 'smooth' });
 	}
 
-// Fetch gets your (local) JSON file…
+// Gets (local) JSON file…
 // https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
-// Fetch gets your (local) JSON file
 fetch('assets/data.json')
+
+	// convert response to JSON
 	.then(response => response.json())
 	.then(data => {
 		renderItems(data);
@@ -94,6 +100,7 @@ fetch('assets/data.json')
 		const nextBtn = document.getElementById('nextBtn');
 		const dataList = document.getElementById('data-list');
 
+		// Add next button -- when user clicked, scrolls the list to the right by the width of the visible container
 		nextBtn.addEventListener('click', () => {
 			const cardWidth = dataList.clientWidth;
 			dataList.scrollBy({ left: cardWidth, behavior: 'smooth' });
@@ -106,8 +113,7 @@ fetch('assets/data.json')
 	});
 
 
-// // filtering 
-
+// Filtering 
 // Let Javascript know about my buttons and elements 
 let kdramalBlocks = document.querySelector('#data-list')
 let feelgoodFilter= document.querySelector('#feelGood-filter')
@@ -119,15 +125,12 @@ let nostalgicFilter=document.querySelector('#nostalgic-filter')
 let cheesyFilter=document.querySelector('#cheesy-filter')
 let spontaneousFilter=document.querySelector('#spontaneous-filter')
 
-function showNavButtons(){
-	const nextBtn = document.getElementById('nextBtn');
-	const prevBtn = document.getElementById('prevBtn');
-	nextBtn.style.display ='block';
-	prevBtn.style.display ='block';
-}
-
+// This is triggered when a filter is clicked ... scroll buttons only show up after the user chooses a vibe
+// Selects the entire wrapper that contains both scroll buttons (inside .nav-buttons)
 function showNavButtons() {
 	const navWrapper = document.querySelector('.nav-buttons');
+
+	// Makes the nav bar visible by changing display from none to flex
 	if (navWrapper) {
 		navWrapper.style.display = 'flex';
 	}
@@ -165,7 +168,7 @@ function showDataContainer() {
 	}
 }
 
-// Add onclick for my buttons
+// Add onclick for my buttons to remove or show certain classes
 feelgoodFilter.onclick = () => {
 	kdramalBlocks.classList.add('show-feelGood',)
     kdramalBlocks.classList.remove('show-uglyCry', 'show-thriller','show-romantic', 'show-mysterious','show-nostalgic', 'show-cheesy', 'show-spontaneous')
